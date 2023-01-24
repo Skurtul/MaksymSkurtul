@@ -1,0 +1,299 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+    .image {
+    position: absolute;
+    left: 366px;
+    top: 66px;
+    }
+
+    h1 {color: #242732;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    }
+    
+      .About span {
+      color: #4F4F4F;
+      font-size: 16px;
+      font-weight: 500;
+
+      }
+      
+        .About p {
+          color: #4F4F4F;
+          font-size: 12px;
+          font-weight: 400;
+        }
+
+        .About {
+          position: absolute;
+          width: 332px;
+          height: 153px;
+          left: 720px;
+          top: 43px;
+
+        }
+
+        .Experience {
+          position: absolute;
+          width: 332px;
+          height: 153px;
+          left: 366px;
+          top: 310px; 
+        }
+
+        .firstwork {
+          position: absolute;
+          width: 332px;
+          height: 153px;
+          left: 366px;
+          top: 368px; 
+        }
+
+        .twowork {
+          position: absolute;
+          width: 332px;
+          height: 153px;
+          left: 366px;
+          top: 562px; 
+
+        }
+
+        .Skills {
+         position: absolute;
+         width: 467px;
+         height: 78px;
+         left: 366px;
+         top: 764px;
+        }
+
+
+        .Companyfirst {
+         position: absolute;
+         width: 467px;
+         height: 78px;
+         left: 720px;
+         top: 316px;
+        }
+        
+        .Companyfirst span {
+         color: #4F4F4F;
+         font-size: 13px;
+         font-weight: 500;
+         }
+     
+         .Companyfirst ul {
+         color: #4F4F4F;
+         font-size: 14px;
+         font-weight: 700;
+     
+         }
+     
+         .Companyfirst li {
+         color: #4F4F4F;
+         font-size: 13px;
+         font-weight: 500;
+         }
+
+         .Experiencefirst ul {
+         
+         position: absolute;
+         width: 580px;
+         height: 32px;
+         left: 680px;
+         top: 400px;
+         color: #4F4F4F;
+          font-size: 13px;
+          font-weight: 700;
+        }
+
+        .Experiencefirst li {
+         
+          position: flex;
+          width: 300px;
+          height: 40px;
+          left: 150px;
+          top: 488px;
+          color: #4F4F4F;
+          font-size: 13px;
+          font-weight: 500;
+
+         }
+
+         .Experiencetwo ul {
+          position: absolute;
+          width: 20px;
+          height: 40px;
+          left: 680px;
+          top: 632px;
+          color: #4F4F4F;
+          font-size: 13px;
+          font-weight: 700;
+        }
+
+        .Experiencetwo li {
+          position: flex;
+          width: 240px;
+          height: 25px;
+          left: 150px;
+          top: 632px;
+          color: #4F4F4F;
+          font-size: 13px;
+          font-weight: 500;
+
+        }
+
+        .Companytwo {
+          position: absolute;
+          width: 467px;
+          height: 78px;
+          left: 720px;
+          top: 550px;
+
+        }
+         
+     
+         .Companytwo span {
+             color: #4F4F4F;
+             font-size: 13px;
+             font-weight: 500;
+             }
+         
+             .Companytwo ul {
+             color: #4F4F4F;
+             font-size: 14px;
+             font-weight: 700;
+         
+             }
+         
+             .Companytwo li {
+             color: #4F4F4F;
+             font-size: 13px;
+             font-weight: 500;
+             }
+             .Contacts a {
+              color: #000000;
+              font-size: 12px;
+              font-weight: 400;
+             }
+
+             .Contacts li{
+              color: #000000;
+              font-size: 12px;
+              font-weight: 400;
+              list-style: none;
+              width: 144px;
+              height: 29px;
+             }
+              
+             .Contacts {
+              position: absolute;
+              /* width: 144px;
+              height: 144px; */
+              left: 327px;
+              top: 164px;
+
+             }
+     
+     
+     h2 {
+         color: #242732;
+         font-size: 18px;
+         font-weight: 700;
+         letter-spacing: 2px;
+     }
+     
+     h3 {
+         color:#4F4F4F;
+         font-size: 16px;
+         font-weight: 700;
+     }
+     
+     h4 {
+         color: #4F4F4F;
+         font-size: 12px;
+         font-weight: 700;
+     
+     }
+
+     span#years {
+       font-size: 12px;
+       font-weight: 700;
+       color: #4F4F4F;
+     }
+
+     span#location {
+        font-size: 12px;
+        font-weight: 500;
+        color: #4F4F4F
+      }
+
+     
+      span#course {
+        font-size: 13px;
+        font-weight: 500;
+        color: #242732;
+      }
+
+      span#position {
+        font-size: 13px;
+        font-weight: 500;
+        color: #242732;
+      }
+
+       .Education {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+        left: 720px;
+        top: 764px;
+       
+
+       }
+       .Logomachine {
+        position: flex;
+        width: 467px;
+        height: 128px;
+        left: 720px;
+        top: 850px;
+
+       }
+
+       /* .Tilda {
+        position: flex;
+        width: 467px;
+        height: 140px;
+        left: 720px;
+        top: 900px;
+       } */
+
+       .Grinchenko {
+        position: flex;
+        width: 467px;
+        height: 128px;
+        left: 720px;
+        top: 964px;
+        
+       }
+
+      
+
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    
+     
+     
+    
+
+
+
+
