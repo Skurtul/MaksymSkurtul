@@ -1,0 +1,210 @@
+
+body {
+    font-family: 'IBMPlexSans', sans-serif;
+    font-family: 'Poppins' , sans-serif;
+    font: #0C2134;
+    maxwidth: 1400px;
+    minwidth: 320px;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    margin: 32px 0px 30px 1170px;
+    height: 30px;
+    width: 400px;
+}
+.header a {
+    margin: 10px auto 0px 24px;
+    width: 100px;
+}
+.button {
+    background-color: #282828;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 40px auto -450px;
+    cursor: pointer;
+    width: 169px;
+  }
+/* .input {
+    margin: 300px 300px 300px 300px;
+} */
+.hero {
+    width: 820px;
+    margin: -400px auto auto 316px;
+    border: 1.5px solid rgb(218, 214, 214);
+    border-radius: 2%;
+    height: 748px;
+}
+
+.sidebar {
+    width: 247px;
+    margin: -64px auto auto 80px;
+    
+}
+
+.navigation {
+    max-width: 247px;
+    margin: 56px auto auto -40px;
+
+}
+.carfirst {
+    margin: 40px auto auto 43px;
+}
+.carfirst a {
+    text-decoration: none;
+}
+.carsecond {
+    margin: -442px 400px;
+    
+}
+.carsecond a {
+    text-decoration: none;
+}
+
+.carthird {
+    margin: -32px 100px 100px 43px;
+    
+}
+.carthird a {
+    text-decoration: none;
+}
+.carfourth {
+   margin:  -321px auto auto 400px;
+}
+.carfourth a {
+    text-decoration: none;
+}
+.carname {
+    width: 256px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #282828;
+    text-decoration: none;
+    margin: 8px 0 4px 0px;
+
+
+}
+span#priceUSAPassat {
+    margin: 43px;
+    font-weight: 700;
+    font-size: 18px;
+}
+span#priceUAHPassat {
+    margin: -32px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.hrpassat {
+    width: 300px;
+    border: 1px solid #dbdbdb; opacity: 60%;
+    margin: 15px 0 0 43px;
+}
+.Passat li {
+        display: flex;
+        align-items: center;
+        /* width: 300px; */
+        /* height: 19px; */
+        margin: 22px 0px auto 0px;
+      }
+.Passat span {
+    flex: 1;
+    margin: -13px 0px 8px 10px;
+    font-family: 'Poppins' , sans-serif;
+} 
+.Passat img {
+    height: 22px;
+    margin: -22px 0 0 0px;
+
+} 
+.Passatright li {
+    margin: 0px 0px auto 139px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 19px;
+  }
+.Passatright span {
+flex: 1;
+margin: -150px -20px 12px 16px;
+font-family: 'Poppins' , sans-serif;
+} 
+.Passatright img {
+/* margin: 20px 20px 20px 20px;     */
+height: 22px;
+margin: -162px 0 0 4px;
+
+}         
+
+.hrqaashqai {
+    width: 300px;
+    border: 1px solid #dbdbdb; opacity: 60%;
+    margin: 488px 0 0 400px;
+}
+.Qashqai li {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 19px;
+    margin: 0px 0px auto 360px;
+  }
+  .Qashqai span {
+flex: 1;
+margin: 23px 0px 8px 10px;
+font-family: 'Poppins' , sans-serif;
+} 
+.Qashqai img {
+height: 22px;
+margin: 12px 0 0 0;
+
+} 
+.Qashqairight li {
+margin: 0px 0px auto 500px;
+display: flex;
+align-items: center;
+width: 300px;
+height: 19px;
+}
+.Qashqairight span {
+flex: 1;
+margin: -113px -20px 12px 16px;
+font-family: 'Poppins' , sans-serif;
+} 
+.Qashqairight img {
+/* margin: 20px 20px 20px 20px;     */
+height: 22px;
+margin: -127px 0 0 4px;
+
+}         
+.nav li {
+    display: flex;
+    align-items: center;
+  }
+  .nav span {
+    flex: 1;
+    margin: 0px 0px 0px 10px;
+    font-family: 'Poppins' , sans-serif;
+  }
+
+  .nav img {
+    height: 24px;
+    margin: 0 0 5px;
+  }
+
+h1#h1 {
+    margin: 32px auto auto 43px;
+    font-size: 28px;
+    font-weight: 500;
+    width: 310px;
+}
