@@ -52,7 +52,8 @@ p#course {
   padding: 0px;
   width: 400px;
 }
-input[type=text], input[type=password] {
+input[type=text], input[type=password],
+input[type=email], input[type=tel] {
   width: 15%;
   padding: 14px;
   margin: 5px 0 16px 0;
