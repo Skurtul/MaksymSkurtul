@@ -2,9 +2,7 @@
 body {
     font-family: 'IBMPlexSans', sans-serif;
     font-family: 'Poppins' , sans-serif;
-    font: #0C2134;
-    maxwidth: 1400px;
-    minwidth: 320px;
+    font: #555555;
 }
 .wrapper {
     width: 100%;

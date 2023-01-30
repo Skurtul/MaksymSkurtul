@@ -10,14 +10,8 @@ body {
   position: fixed;
     top: 50%;
     left: 50%;
-    margin: -224px 0 0 -340px;
-
+    margin: -224px 0 0 -320px;
 }
-/* .container img {
-  margin: 100px 100px 100px 100px;
-  width: 240px;
-  height: 80px;
-} */
 .header {
   padding: 16px;
   background-color: white;
@@ -29,16 +23,15 @@ body {
     padding: 80px 232px;
 }
 .header p {
-  font-size: 12;
+  font-size: 13px;
   font-weight: 600;
   color: #555555;
   width: 211px;
-  margin: 0px -10px;
-
+  margin: 0px -5px;
 }
 .columnleft {
   height: 500px;
-  margin: -88px;
+  margin: -108px;
   padding: 0px;
   width: 400px;
 }
@@ -59,8 +52,6 @@ p#course {
   padding: 0px;
   width: 400px;
 }
-
-/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 15%;
   padding: 14px;
@@ -70,20 +61,14 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
   border-radius: 8px;
   width: 336px;
-
 }
 input[type=checkbox] {
   margin: 18px 0 0 0;
 }
-
-
-
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-
-/* Overwrite default styles of hr */
 .select {
   display: block; 
 font-size: 16px; 
@@ -93,7 +78,6 @@ width: 272px;
 height: 32px;
 margin: -7px 0 0 0;
 }
-
 .button {
   width: 363px;
   margin: 24px 0 0 0;
@@ -134,13 +118,9 @@ margin: -7px 0 0 0;
   margin: -23px 50px 50px 25px;
   font-size: 13px;
 }
-
-
 a {
   color: #1E2772;
 }
-
-
 .signin {
   background-color: #f1f1f1;
   text-align: center;
