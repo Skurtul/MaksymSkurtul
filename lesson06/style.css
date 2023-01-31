@@ -1,0 +1,40 @@
+* {
+padding: 0;
+/* margin: 0 0 0 54px; */
+text-align: center;
+}
+ul li {
+    list-style: none;
+}
+.menu li {
+    display: inline-block;
+    padding: 24px;
+    line-height: 32px;
+}
+.menu__item {
+    text-decoration: none;
+    color: #070707;
+}
+.menu__item--gray {
+    color: #828282;
+
+}
+.skills figure {
+    display: inline-block;
+    padding: 10px;
+}
+.sendbtn {
+    background-color: #000;
+  color: white;
+  /* padding: 14px 20px;
+  margin: 25px 40px 40px 0px; */
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  width: 164px;
+  height: 44px;
+  opacity: 0.9;
+}
+.footer {
+    padding: 20px;
+}
