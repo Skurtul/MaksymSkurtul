@@ -105,9 +105,7 @@ img + figcaption {
   height: 44px;
   opacity: 0.9;
 }
-.footer {
-  height: 400px;
-}
+
 footer > h2 {
   padding: 100px 0 20px 0;
 }
