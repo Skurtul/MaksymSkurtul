@@ -3,7 +3,7 @@
   text-align: center;
 }
 .header {
-  padding: 16px 0;
+  padding: 17px 0;
  }
 .wrapper {
   width: 1200px;
@@ -11,13 +11,11 @@
 }
 .header img {
   float: left;
+  padding-top: 7px;
 }
 .menu {
   display: inline-block;
-  margin-top: -8px;
-}
-.buttons {
-  display: inline-block;
+  margin-top: 0;
 }
 .menu__item, .menu__item--active {
   display: inline;
@@ -40,36 +38,37 @@ a:hover {
 .buttons__header {
 display: inline;
 float: right;
+padding: 0;
 }
-.inbtn__item, .upbtn__item  {
+.inbtn--item, .upbtn--item  {
   margin-left: 30px;
   width: 110px;
-  height: 42px;
+  height: 48px;
   padding: 10px auto;
   background-color: #fff;
   border: 1px solid #BCD0E5;
   border-radius: 4px;
   cursor: pointer;
 } 
-.upbtn__item {
+.upbtn--item {
   background-color: #FF9900;
   border: 2px solid transparent;
   border-radius: 4px;
   color: #fff;
 } 
-.inbtn__item:hover {
+.inbtn--item:hover {
   background-color: #FF9900;
   color: #fff;
   font-weight: 600;
   border: none;
 }
-.upbtn__item:hover {
+.upbtn--item:hover {
   background-color: #fff;
   border: 2px solid #BCD0E5;
   color: #173A56;
   font-weight: 600;
 }
-.get__startedbtn--item:hover, .upbtn__item--now:hover {
+.startedbtn--item:hover, .upbtn__now--item:hover {
   background-color: #fff;
   border: 2px solid #BCD0E5;
   color: #173A56;
@@ -100,11 +99,11 @@ h1 {
   margin: 0 auto;
   padding-bottom: 24px;
 }
-.button__get--started{
+.button__started {
   text-align: left;
   padding-bottom: 196px;
 }
-.get__startedbtn--item, .upbtn__item--now {
+.startedbtn--item, .upbtn__now--item {
   width: 180px;
   height: 50px;
   padding: 13px auto;
@@ -135,15 +134,16 @@ h1 {
   font-weight: 700;
   width: 557px;
   display: inline-block;
+  margin: 0 auto;
   padding-bottom: 50px;
 }
-.card__icon--item, .icon__fourth--item {
-  padding-right: 24px;
+.card__icon--item, .card__icon--fourth--item {
+  padding-right: 32px;
   display: inline-block;
   text-align: left;
   margin: 0 auto;
 }
-.icon__fourth--item { 
+.card__icon--fourth--item { 
   padding-right: 0;
 } 
 .head__text__icon--item {
@@ -158,6 +158,7 @@ h1 {
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
+  color: #544837;
   width: 270px;
   text-align: left;
   padding-bottom: 70px;
@@ -169,6 +170,7 @@ h1 {
 .benefits {
   width: 1200px;
   margin: 0 auto;
+  color: #2F281E;
 }
 .benefits h2 {
   text-align: left;
