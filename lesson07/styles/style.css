@@ -12,14 +12,17 @@ header {
 .menu li {
   display: inline-block;
   padding: 16px;
-  line-height: 32px;
 }
 a:hover {
   color: #1a2160;
 }
 .menu__item {
+  display: inline-block;
   text-decoration: none;
   color: #070707;
+  font-size: 18px;
+  letter-spacing: .02em;
+  line-height: 25px;
 }
 .menu__item--gray {
   color: #828282;
@@ -92,7 +95,7 @@ section > h2 {
   display: inline-block;
   border-bottom: 1px solid #070707;
 }
-a {
+.portfolio a {
   text-decoration: none;
   color: #070707;
   font-size: 18px;

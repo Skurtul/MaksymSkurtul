@@ -1,0 +1,205 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.header {
+  padding: 16px 0;
+ }
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header img {
+  float: left;
+}
+.menu {
+  display: inline-block;
+  margin-top: -8px;
+}
+.buttons {
+  display: inline-block;
+}
+.menu__item, .menu__item--active {
+  display: inline;
+}
+.menu__item--active a {
+  text-decoration: none;
+  color: #FF9900;
+  padding-right: 20px;
+}
+.menu__item a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  color: #2F281E;
+  padding-right: 20px;
+}
+a:hover {
+  color: #FF9900;
+}
+.buttons__header {
+display: inline;
+float: right;
+}
+.inbtn__item, .upbtn__item  {
+  margin-left: 30px;
+  width: 110px;
+  height: 42px;
+  padding: 10px auto;
+  background-color: #fff;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+  cursor: pointer;
+} 
+.upbtn__item {
+  background-color: #FF9900;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+} 
+.inbtn__item:hover {
+  background-color: #FF9900;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+.upbtn__item:hover {
+  background-color: #fff;
+  border: 2px solid #BCD0E5;
+  color: #173A56;
+  font-weight: 600;
+}
+.get__startedbtn--item:hover, .upbtn__item--now:hover {
+  background-color: #fff;
+  border: 2px solid #BCD0E5;
+  color: #173A56;
+}
+.hero {
+  width: 1200px;
+  margin: 0 auto;
+  color: #2F281E;
+}
+.head__hero {
+  float: left;
+  padding-top: 167px;
+}
+h1 {
+  text-align: left;
+  width: 500px;
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.head__hero p {
+  width: 500px;
+  font-size: 18px;
+  color: #544837;
+  line-height: 28px;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+.button__get--started{
+  text-align: left;
+  padding-bottom: 196px;
+}
+.get__startedbtn--item, .upbtn__item--now {
+  width: 180px;
+  height: 50px;
+  padding: 13px auto;
+  background-color: #FF9900;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+.vector__hero {
+  float: right;
+  display: inline;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.features {
+  width: 1200px;
+  margin: 0 auto;
+  color: #2F281E;
+}
+ .features h2 {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  width: 557px;
+  display: inline-block;
+  padding-bottom: 50px;
+}
+.card__icon--item, .icon__fourth--item {
+  padding-right: 24px;
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+.icon__fourth--item { 
+  padding-right: 0;
+} 
+.head__text__icon--item {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  padding-top: 30px;
+  text-align: left;
+  padding-bottom: 16px;
+}
+.note__text__icon--item {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  width: 270px;
+  text-align: left;
+  padding-bottom: 70px;
+}
+.button__up--now {
+  text-align: center;
+  padding-bottom: 156px;
+}
+.benefits {
+  width: 1200px;
+  margin: 0 auto;
+}
+.benefits h2 {
+  text-align: left;
+  width: 395px;
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: 700;
+  margin: 0;
+  padding: 8px 0 16px;
+}
+.benefits p {
+  margin: 0;
+  width: 525px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #544837;
+  line-height: 26px;
+  text-align: left;
+}
+.title__description--design {
+ padding: 20px 0 40px;
+}
+.list__benefits h4 {
+  text-align: left;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.list__benefits p {
+  padding-bottom: 32px;
+}
+.vector__design {
+  float: right;
+  margin: 0 auto;
+}
