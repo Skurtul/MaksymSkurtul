@@ -4,7 +4,7 @@
 }
 .header {
   padding: 17px 0;
- }
+}
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -17,66 +17,69 @@
   display: inline-block;
   margin-top: 0;
 }
-.menu__item, .menu__item--active {
+.menu__item,
+.menu__item--active {
   display: inline;
 }
 .menu__item--active a {
   text-decoration: none;
-  color: #FF9900;
+  color: #ff9900;
   padding-right: 20px;
 }
 .menu__item a {
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
-  color: #2F281E;
+  color: #2f281e;
   padding-right: 20px;
 }
 a:hover {
-  color: #FF9900;
+  color: #ff9900;
 }
 .buttons__header {
-display: inline;
-float: right;
-padding: 0;
+  display: inline;
+  float: right;
+  padding: 0;
 }
-.inbtn--item, .upbtn--item  {
+.inbtn--item,
+.upbtn--item {
   margin-left: 30px;
   width: 110px;
   height: 48px;
   padding: 10px auto;
   background-color: #fff;
-  border: 1px solid #BCD0E5;
+  border: 1px solid #bcd0e5;
   border-radius: 4px;
   cursor: pointer;
-} 
+}
 .upbtn--item {
-  background-color: #FF9900;
+  background-color: #ff9900;
   border: 2px solid transparent;
   border-radius: 4px;
   color: #fff;
-} 
+}
 .inbtn--item:hover {
-  background-color: #FF9900;
+  background-color: #ff9900;
   color: #fff;
   font-weight: 600;
   border: none;
 }
 .upbtn--item:hover {
   background-color: #fff;
-  border: 2px solid #BCD0E5;
-  color: #173A56;
+  border: 2px solid #bcd0e5;
+  color: #173a56;
   font-weight: 600;
 }
-.startedbtn--item:hover, .upbtn__now--item:hover {
+.startedbtn--item:hover,
+.upbtn__now--item:hover {
   background-color: #fff;
-  border: 2px solid #BCD0E5;
-  color: #173A56;
+  border: 2px solid #bcd0e5;
+  color: #173a56;
 }
 .hero {
   width: 1200px;
   margin: 0 auto;
-  color: #2F281E;
+  color: #2f281e;
 }
 .head__hero {
   float: left;
@@ -102,11 +105,12 @@ h1 {
   text-align: left;
   padding-bottom: 196px;
 }
-.startedbtn--item, .upbtn__now--item {
+.startedbtn--item,
+.upbtn__now--item {
   width: 180px;
   height: 50px;
   padding: 13px auto;
-  background-color: #FF9900;
+  background-color: #ff9900;
   border: 2px solid transparent;
   border-radius: 4px;
   font-size: 16px;
@@ -125,9 +129,14 @@ h1 {
 .features {
   width: 1200px;
   margin: 0 auto;
-  color: #2F281E;
+  color: #2f281e;
 }
- .features h2 {
+.wrapper__card {
+  background: url(/assets/images/bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.features h2 {
   font-size: 36px;
   line-height: 44px;
   font-weight: 700;
@@ -135,16 +144,18 @@ h1 {
   display: inline-block;
   margin: 0 auto;
   padding-bottom: 50px;
+  text-align: center;
 }
-.card__icon--item, .card__icon--fourth--item {
+.card__icon--item,
+.card__icon--fourth--item {
   padding-right: 32px;
   display: inline-block;
   text-align: left;
   margin: 0 auto;
 }
-.card__icon--fourth--item { 
+.card__icon--fourth--item {
   padding-right: 0;
-} 
+}
 .head__text__icon--item {
   font-size: 22px;
   font-weight: 600;
@@ -164,12 +175,13 @@ h1 {
 }
 .button__up--now {
   text-align: center;
-  padding-bottom: 156px;
+  padding-bottom: 70px;
 }
 .benefits {
   width: 1200px;
   margin: 0 auto;
-  color: #2F281E;
+  color: #2f281e;
+  margin-top: 104px;
 }
 .benefits h2 {
   text-align: left;
@@ -190,7 +202,7 @@ h1 {
   text-align: left;
 }
 .title__description--design {
- padding: 20px 0 40px;
+  padding: 20px 0 40px;
 }
 .list__benefits h4 {
   text-align: left;
