@@ -1,0 +1,140 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.header {
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid #bdbdbd;
+}
+.wrap__header,
+.wrap__footer {
+  display: flex;
+  justify-content: space-around;
+  width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+}
+.menu__item {
+  display: inline;
+}
+.menu__item a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.menu__item a:hover {
+  color: #18b5dc;
+}
+.header__btn--callback {
+  width: 130px;
+  height: 42px;
+  border: 1px solid #3c3c3c;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  cursor: pointer;
+}
+.header__btn--callback:hover {
+  border: none;
+  color: #fff;
+  background-color: #18b5dc;
+}
+.wrap__hero__head {
+  display: flex;
+  background-color: #f6f6f6;
+  padding-top: 150px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  width: 1440px;
+}
+.hero {
+  color: #3c3c3c;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  justify-content: space-around;
+}
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  font-weight: 41px;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  padding-bottom: 24px;
+}
+.hero__head__description--line-item {
+  width: 45px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: #dddbdb;
+  border: none;
+}
+.hero__head__description p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #3c3c3c;
+  width: 570px;
+  margin: 0;
+  padding: 40px 0 60px;
+}
+.wrap__cat__teams {
+  display: flex;
+  padding-bottom: 150px;
+}
+.cat__teams__card--item {
+  margin: 0 auto;
+  padding-right: 30px;
+}
+.cat__teams__card--item--fourth {
+  margin: 0 auto;
+}
+.card__name--item,
+.card__position--item {
+  text-align: left;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #282528;
+  padding-top: 24px;
+}
+.card__position--item {
+  font-weight: 300;
+  color: #646464;
+  padding-top: 8px;
+}
+.footer {
+  display: flex;
+}
+.wrap__footer {
+  padding: 40px 0 40px;
+  flex-direction: column;
+}
+.footer__menu {
+  padding: 28px 0 28px;
+}
+.footer__menu ul {
+  margin: 0;
+}
+.footer__menu a {
+  font-size: 18px;
+  line-height: 22px;
+}
+.footer__social a {
+  padding-right: 16px;
+  text-decoration: none;
+}
+.footer__social a:nth-child(5) {
+  padding-right: 0;
+}
+

@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  text-align: center;
+  /* text-align: center; */
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
 }
@@ -46,22 +46,26 @@ h2 {
   line-height: 34px;
 }
 .wrapper {
-  display: inline-block;
-  text-align: center;
-  width: 1200px;
+  /* display: inline-block; */
+  /* text-align: center; */
+  width: 1440px;
 }
 .aboutme {
   background-color: #f6f6f6;
+  /* text-align: center; */
   padding-bottom: 70px;
 }
 section > h2 {
   padding: 100px 0 50px 0;
+  text-align: center;
 }
 .aboutme p {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   padding-bottom: 30px;
+  text-align: center;
+
 }
 .skills {
   padding-bottom: 100px;
