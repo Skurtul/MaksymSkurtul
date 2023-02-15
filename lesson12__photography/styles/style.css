@@ -28,52 +28,42 @@ h1 {
     bottom: 40px;
     left: 20px;
 }
-.subtitle_date {
+.subtitle_date--rectangle {
     position: relative;
     font-weight: 400;
     color: #E0E0E0;
-    bottom: 0;
+    bottom: 60px;
+    left: 616px;
+}
+.subtitle_date--square {
+    position: relative;
+    font-weight: 400;
+    color: #E0E0E0;
+    bottom: 62px;
+    left: 208px;
 }
 .box-1 {
     display: grid;
-}
-.subtitle_date--1 {
-    left: 80px;
 }
 .box-2 {
     display: grid;
     grid-column: 5;
 }
-.subtitle_date--2 {
-    left: 533px;
-}
 .box-3 {
     display: grid;
     grid-row: 5;
-}
-.subtitle_date--3 {
-    left: 449px;
 }
 .box-4 {
     display: grid;
     grid-column: 9;
     grid-row: 5;
 }
-.subtitle_date--4 {
-    left: 45px;
-}
 .box-5 {
     display: grid;
     grid-row: 9;
-}
-.subtitle_date--5 {
-    left: 105px;
 }
 .box-6 {
     display: grid;
     grid-column: 5;
     grid-row: 9;
-}
-.subtitle_date--6 {
-    left: 457px;
 }

@@ -1,0 +1,53 @@
+@import url('../../assets/fonts/Farro/Farro-Light.ttf');
+@import url('/Staatliches/Staatliches-Regular.ttf');
+@import url("../../assets/fonts/FrancoisOne/FrancoisOne-Regular.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+/* @font-face { */
+  /* font-family: "Tourney"; */
+  /* font-style: bold; */
+  /* font-weight: 700; */
+  /* Браузер сначала попробует найти шрифт локально */
+  /* src: local("Tourney"), */
+       /* Если не получилось, загрузит woff2 */
+       /* url("../assets/fonts/Tourney/Tourney-Bold.ttf") format("ttf"), */
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       /* url("/fonts/roboto.woff") format("woff"); */
+/* } */
+.header {
+    padding: 17px 0;
+  }
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu__item {
+    display: inline;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    /* font-family: "Staatliches"; */
+    /* font-family: url("../assets/fonts/Tourney/Tourney-Bold.ttf"); */
+    /* font-weight: 700; */
+    text-transform: uppercase;
+  }
+  .menu__item--lang {
+    font-family: "Farro";
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    padding-right: 50px;
+  }
+  ul {
+    padding: 0;
+  }
+  .menu a {
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover {
+    color: #ff9900;
+  }
