@@ -1,8 +1,6 @@
 * {
     border-radius: 20px;
-}
-body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
 }
 header {
     padding: 120px 0 80px;
