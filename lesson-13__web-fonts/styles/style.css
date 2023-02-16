@@ -1,9 +1,9 @@
-@import url("../../assets/fonts/Farro/Farro.css");
-@import url("../../assets/fonts/FrancoisOne/FrancoisOne.css");
-@import url("../../assets/fonts/Hind/Hind.css");
-@import url("../../assets/fonts/PTSans/PTSans.css");
-@import url("../../assets/fonts/Staatliches/Staatliches.css");
-@import url("../../assets/fonts/Tourney/Tourney.css"); */
+@import url("../assets/fonts/Farro/Farro.css");
+@import url("../assets/fonts/FrancoisOne/FrancoisOne.css");
+@import url("../assets/fonts/Hind/Hind.css");
+@import url("../assets/fonts/PTSans/PTSans.css");
+@import url("../assets/fonts/Staatliches/Staatliches.css");
+@import url("../assets/fonts/Tourney/Tourney.css"); */
 .header {
   display: flex;
   }
