@@ -17,8 +17,6 @@ h1 {
     grid-template-columns: repeat(12, 70px);
     grid-template-rows: repeat(12, 70px);
     gap: 30px;
-    max-width: 1170px;
-    width: 100%;
     margin: 0 auto;
     justify-content: center;
     padding-bottom: 120px;
