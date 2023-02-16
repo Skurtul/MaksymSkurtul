@@ -72,10 +72,12 @@ h2 {
   padding-top: 40px;
   margin: 0;
 }
+.underline {
+  font-family: "Hind";
+  height: 38px;
+  display: inline-block;
+  border-bottom: 1.5px solid #000;
+}
 .mark {
   background-color: #dadada;
-}
-.underline {
-  text-decoration: none;
-  border-bottom: 1.5px solid #000;
 }
