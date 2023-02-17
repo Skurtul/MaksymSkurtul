@@ -22,49 +22,57 @@ h1 {
     padding-bottom: 120px;
 }
 .subtitle {
-    position: relative;
+    position: absolute;
+    width: 370px;
     font-size: 20px;
     color: #ffffff;
     font-weight: 500;
-    bottom: 40px;
+    top: 327px;
+}
+.subtitle-author {
+    position: absolute;
     left: 20px;
 }
-.subtitle_date--rectangle {
-    position: relative;
+.subtitle-date {
+    position: absolute;
+    right: 20px;
+    font-weight: 400;
+    color: #E0E0E0;
+}
+/* .subtitle_date--rectangle {
+    position: absolute;
     width: 150px;
     font-weight: 400;
     color: #E0E0E0;
     bottom: 60px;
     left: 616px;
-}
-.subtitle_date--square {
-    position: relative;
-    width: 150px;
-    font-weight: 400;
-    color: #E0E0E0;
-    bottom: 62px;
-    left: 208px;
-}
+} */
 .box-1 {
     display: grid;
+    position: relative;
 }
 .box-2 {
     display: grid;
+    position: relative;
     grid-column: 5;
 }
 .box-3 {
     display: grid;
+    position: relative;
     grid-row: 5;
 }
 .box-4 {
     display: grid;
+    position: relative;
     grid-area: 5 / 9;
 }
 .box-5 {
     display: grid;
+    position: relative;
     grid-row: 9;
 }
 .box-6 {
     display: grid;
+    position: relative;
     grid-area: 9 / 5;
 }

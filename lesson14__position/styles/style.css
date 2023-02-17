@@ -5,6 +5,9 @@
 @import url("../assets/fonts/Staatliches/Staatliches.css");
 @import url("../assets/fonts/Tourney/Tourney.css");
 
+/* .header {
+  display: flex;
+} */
 .header__wrap {
   max-width: 1200px;
   height: 80px;
