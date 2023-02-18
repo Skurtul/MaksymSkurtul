@@ -27,13 +27,26 @@
                 </ul>
             </nav>
             <a href="#">
-                <img src="assets/images/company-logo-black.svg" alt="Logo Konstrukt">
+                <img class="logo" src="assets/images/company-logo-black.svg" alt="Logo Konstrukt">
             </a>
         </div>
     </header>
-    <section class="cat">
+    <main class="main">
+        <aside class="sidebar">
+            <div class="sidebar__wrap">
+                <h2 class="sidebar__title">Introduction</h2>
+                <h2 class="sidebar__title">Core components</h2>
+                <h2 class="sidebar__title">React fundamentals</h2>
+                <h2 class="sidebar__title">Handling text input</h2>
+            </div>
+        </aside>
+        <section class="cat">
+            <div class="background__sticky">
+                <img class="background" src="/assets/images/bg-picture.png">
+                </div>
         <div class="wrap">
             <div class="title">
+                <img src="/assets/images/divider.png">
                 <h2>Introduction
                     <span class="chapter">Chapter 1</span>
                 </h2>
@@ -45,6 +58,7 @@
         </div>
         <div class="wrap">
             <div class="title">
+                <img src="/assets/images/divider.png">
                 <h2>Core components
                     <span class="chapter">Chapter 2</span>
                 </h2>
@@ -59,6 +73,7 @@
         </div>
         <div class="wrap">
             <div class="title">
+                <img src="/assets/images/divider.png">
                 <h2>React fundamentals
                     <span class="chapter">Chapter 3</span>
                 </h2>
@@ -76,13 +91,13 @@
             <p class="description"><strong>+ JSX.</strong> React and React Native use JSX, a syntax that
                 lets you write elements inside JavaScript like so:
                 <mark class="mark">
-                    [Text]Hello, I am your cat![/Text].</mark>
+                    &ltText&gtHello, I am your cat!&lt/Text&gt.</mark>
             </p>
             <p class="description">The React docs have <span class="underline">a comprehensive guide to JSX</span> you can refer to learn even
                 more.
                 Because JSX is JavaScript, you can use variables inside it. Here you are declaring a
                 <mark class="mark">name</mark> for the cat, name, and embedding it with curly braces inside
-                <mark class="mark">[Text]</mark>
+                <mark class="mark">&ltText&gt</mark>
             </p>
             <p class="description">
                 <strong> + props.</strong>
@@ -98,6 +113,7 @@
         </div>
         <div class="wrap">
             <div class="title">
+                <img src="/assets/images/divider.png">
                 <h2>Handling text input
                     <span class="chapter">Chapter 4</span>
                 </h2>
@@ -114,6 +130,7 @@
             </p>
         </div>
     </section>
+</main>
 </body>
 
 </html>
