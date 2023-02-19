@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title__wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 150px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.title__using {
+  max-width: 1200px;
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
+}
+.wrap__content-using {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 48px auto;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+}
+.card {
+  display: flex;
+  padding: 20px 0 20px;
+  width: 270px;
+  height: 180px;
+  margin: 0;
+}
+.front,
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 270px;
+  height: 180px;
+  transition: all 0.2s ease;
+  backface-visibility: hidden;
+  background-color: #e6e6e6;
+}
+.back {
+  transform: rotateX(180deg);
+}
+.card:hover .front {
+  transform: rotateX(180deg);
+  transition: all 0.35s ease-in;
+  background-color: #000000;
+}
+.card:hover .back {
+  transform: rotateY(360deg);
+  transition: all 0.35s ease-in;
+  background-color: #000000;
+  fill: #ffffff;
+}

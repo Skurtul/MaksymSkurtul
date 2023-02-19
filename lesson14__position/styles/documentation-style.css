@@ -4,6 +4,12 @@
 @import url("../assets/fonts/PTSans/PTSans.css");
 @import url("../assets/fonts/Staatliches/Staatliches.css");
 @import url("../assets/fonts/Tourney/Tourney.css");
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .header {
   display: flex;
   position: fixed;
@@ -17,7 +23,6 @@
   width: 100%;
   max-width: 1200px;
   height: 70px;
-  background-color: #EAEAEA;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -39,9 +44,6 @@
 .menu__item--using {
   word-spacing: normal;
 }
-ul {
-  padding: 0;
-}
 .menu a {
   text-decoration: none;
   color: #000;
@@ -55,13 +57,21 @@ a:hover {
   margin: 0 auto;
   gap: 30px;
   max-width: 1200px;
-  padding: 70px 0 50px;
+  color: #000;
+  padding: 70px 0 70px;
 }
 .sidebar {
   display: grid;
   grid-template-rows: repeat(12,70px);
   grid-column: 1 / 5;
   padding-top: 90px;
+  font-family: "Francois One";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .sidebar__wrap {
   display: grid;
@@ -71,30 +81,20 @@ a:hover {
   position: sticky;
   top: 106px; 
 }
-h2 {
-  font-family: "Francois One";
-  font-size: 36px;
-  line-height: 44px;
-  height: 58px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin: 0;
-}
-.sidebar__title {
-  display: grid;
+.sidebar__link {
   border-bottom: 1px solid #E6E6E6;
-  height: 58px;
+  list-style: none;
 }
-.cat {
+.content {
   display: grid;
   grid-column: 6 / 13;
 }
-.background__sticky {
+.background__content {
   position: sticky;
   z-index: -1;
   top: 16px;
 }
-.background {
+.img-background {
   position: absolute;
   left: 324px;
   top: 80px;
@@ -104,7 +104,16 @@ h2 {
   height: 76px;
   padding-top: 70px;
 }
-.chapter {
+h2 {
+  font-family: "Francois One";
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.number-chapter {
   font-family: "Farro";
   font-size: 18px;
   letter-spacing: 0.04em;
@@ -127,4 +136,3 @@ h2 {
 .mark {
   background-color: #dadada;
 }
-

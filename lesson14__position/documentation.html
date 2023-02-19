@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/normalize.css" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/documentation-style.css" rel="stylesheet" type="text/css">
     <title>Web-Fonts</title>
 </head>
 
@@ -19,10 +19,10 @@
                         <a href="#">ENG</a>
                     </li>
                     <li class="menu menu__item">
-                        <a href="#">Documentation</a> /
+                        <a href="documentation.html">Documentation</a> /
                     </li>
                     <li class="menu menu__item menu__item--using">
-                        <a href="#">Who's using</a>
+                        <a href="who's-using.html">Who&#8217;s using</a>
                     </li>
                 </ul>
             </nav>
@@ -34,21 +34,21 @@
     <main class="main">
         <aside class="sidebar">
             <div class="sidebar__wrap">
-                <h2 class="sidebar__title">Introduction</h2>
-                <h2 class="sidebar__title">Core components</h2>
-                <h2 class="sidebar__title">React fundamentals</h2>
-                <h2 class="sidebar__title">Handling text input</h2>
+                <li class="menu sidebar__link"><a href="#Introduction">Introduction</a></li>
+                <li class="menu sidebar__link"><a href="#Core-components">Core components</a></li>
+                <li class="menu sidebar__link"><a href="#React-fundamentals"> React fundamentals</a></li>
+                <li class="menu sidebar__link"><a href="#Handling-text-input">Handling text input</a></li>
             </div>
         </aside>
-        <section class="cat">
-            <div class="background__sticky">
-                <img class="background" src="/assets/images/bg-picture.png">
+        <section class="content">
+            <div class="background__content">
+                <img class="img-background" src="assets/images/bg-picture.png">
                 </div>
         <div class="wrap">
-            <div class="title">
-                <img src="/assets/images/divider.png">
+            <div class="title" id="Introduction">
+                <img src="assets/images/divider.png">
                 <h2>Introduction
-                    <span class="chapter">Chapter 1</span>
+                    <span class="number-chapter">Chapter 1</span>
                 </h2>
             </div>
             <p class="description">Welcome to the very start of your React Native journey! If you're looking
@@ -57,32 +57,32 @@
             </p>
         </div>
         <div class="wrap">
-            <div class="title">
-                <img src="/assets/images/divider.png">
+            <div class="title" id="Core-components">
+                <img src="assets/images/divider.png">
                 <h2>Core components
-                    <span class="chapter">Chapter 2</span>
+                    <span class="number-chapter">Chapter 2</span>
                 </h2>
             </div>
             <p class="description">React Native is an open source framework for building Android and iOS
-                applications using React and the app platform’s native capabiles. With React Native, you use
-                JavaScript to access your platform’s APIs as well as to describe the appearance and behavior
+                applications using React and the app platform&#8217;s native capabiles. With React Native, you use
+                JavaScript to access your platform&#8217;s APIs as well as to describe the appearance and behavior
                 of your UI using React components: <em>bundles of reusable, nestable code</em>. You can learn more
                 about
-                React in the next section. But first, let’s cover how components work in React Native.
+                React in the next section. But first, let&#8217;s cover how components work in React Native.
             </p>
         </div>
         <div class="wrap">
-            <div class="title">
-                <img src="/assets/images/divider.png">
+            <div class="title" id="React-fundamentals">
+                <img src="assets/images/divider.png">
                 <h2>React fundamentals
-                    <span class="chapter">Chapter 3</span>
+                    <span class="number-chapter">Chapter 3</span>
                 </h2>
             </div>
             <p class="description">React Native runs on <span class="underline">React</span>, a popular open source library for building user
                 interfaces with JavaScript. To make the most of React Native, it helps to understand React itself.
                 This section can get you started or can serve as a refresher course.
             </p>
-            <p class="description">We’re going to cover the core concepts behind React:
+            <p class="description">We&#8217;re going to cover the core concepts behind React:
             </p>
             <p class="description"> <strong>+ components.</strong> The rest of this introduction
                 to React uses cats in its examples: friendly, approachable creatures that need names and a cafe to
@@ -105,15 +105,15 @@
             </p>
             <p class="description">
                 <strong>+ state.</strong> While you can think of props as arguments you use to configure how
-                components render, state is like a component’s personal
+                components render, state is like a component&#8217;s personal
                 data storage. State is useful for handling data that changes over time or that comes from user
                 interaction.
                 State gives your components memory!
             </p>
         </div>
         <div class="wrap">
-            <div class="title">
-                <img src="/assets/images/divider.png">
+            <div class="title" id="Handling-text-input">
+                <img src="assets/images/divider.png">
                 <h2>Handling text input
                     <span class="chapter">Chapter 4</span>
                 </h2>
