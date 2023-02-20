@@ -5,29 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/style.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Forms</title>
 </head>
 
 <body>
     <main class="main">
-        <form>
-            <div class="form__item">
-                <label class="label" for="username">
-                    Username
-                </label>
-                <input id="username" type="text" placeholder="Enter username" class="input">
-            </div>
-            <div class="form__item">
-                <label class="label" for="password">
-                    Password
-                </label>
-                <input id="password" type="password" placeholder="Enter password" class="input" minlength="4" maxlength="12">
-                <div class="form__item-message">
-                    <span class="form__item-hint">Your password should be between 4 and 12 characters</span>
-                    <span class="form__item-error">Invalid value</span>
+        <form class="form" method="get">
+            <fieldset>
+                <legend>
+                    Create an Account
+                </legend>
+                <div class="form__item">
+                    <label class="label" for="first-name">
+                        First Name
+                    </label>
+                    <input id="first-name" type="text" placeholder="John" class="input">
                 </div>
-            </div>
+                <div class="form__item">
+                    <label class="label" for="last-name">
+                        Last Name
+                    </label>
+                    <input id="last-name" type="text" placeholder="Smith" class="input">
+                </div>
+                <div class="form__item form__item--email">
+                    <label class="label" for="e-mail">
+                        E-mail
+                    </label>
+                    <input id="e-mail" type="e-mail" placeholder="Your E-Mail" class="input" minlength="8"
+                        maxlength="320">
+                    <div class="form__item-message">
+                        <span class="form__item-hint">We'll never share your email with anyone else.</span>
+                        <span class="form__item-error">Invalid value</span>
+                    </div>
+                </div>
+                <div class="form__item__radio">
+                    <label class="container__radio">Male
+                        <input type="radio" name="gender" value="male" required checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container__radio">Female
+                        <input type="radio" name="gender" value="female" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container__radio">Other
+                        <input type="radio" name="gender" value="other" required>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="form__item">
+                    <label class="label"> Country
+                        <select name="choose-a-country" class="select" required>
+                            <option value="front-end">Ukraine</option>
+                            <option value="design">Poland</option>
+                            <option value="back-end">Germany</option>
+                            <option value="marketing">Romania</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form__item">
+                    <label class="label" for="city">
+                        City
+                    </label>
+                    <input id="city" type="text" placeholder="Your City" class="input" autocomplete="off">
+                </div>
+                <div class="form__item__button">
+                    <button type="submit" class="registerbtn">Sign Up</button>
+                </div>
+                <div class="terms">
+                    <p>
+                        By clicking the 'Sign Up' button, you confirm that you
+                        accept our <span><a href="#">Terms of Use</a></span> and <span><a href="#">Privacy
+                                Policy</a></span>
+                    </p>
+                </div>
+                <div class="log-in">
+                    <span>Have an account?
+                    </span>
+                    <span class="log-in log-in--link">
+                        <a href="#">Log In
+                        </a>
+                    </span>
+                </div>
+            </fieldset>
         </form>
     </main>
 </body>
