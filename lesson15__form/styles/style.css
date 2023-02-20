@@ -15,17 +15,16 @@ body {
   margin: 56px auto;
 }
 fieldset {
-  max-width: 570px;
   border: none;
-  padding: 0 36px 36px;
+  padding: 0 35px 35px;
+  font-family: "Roboto", sans-serif;
 }
 legend {
-  font-family: "Roboto";
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
   color: #1c1c1c;
-  padding-top: 36px;
+  padding-top: 35px;
 }
 .form__item {
   display: inline-block;
@@ -39,10 +38,8 @@ legend {
   width: 500px;
 }
 .label {
-  display: inline-block;
   color: #545454;
   font-size: 15px;
-  font-family: "Roboto", serif;
   letter-spacing: -0.02em;
   line-height: 16px;
 }
@@ -52,7 +49,6 @@ legend {
   height: 40px;
   padding: 10px;
   font-size: 13px;
-  font-family: "Roboto";
   line-height: 16px;
   border-radius: 8px;
   margin-top: 12px;
@@ -71,7 +67,6 @@ legend {
   border: 1px solid transparent;
 }
 .form__item-message {
-  font-family: "Roboto";
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -0.01em;
@@ -88,16 +83,12 @@ legend {
 .input:invalid + .form__item-message .form__item-error {
   display: inline-block;
 }
-.form__item__radio {
-  width: 570px;
-}
 .container__radio {
   display: inline-block;
   position: relative;
   margin-right: 20px;
   padding-left: 28px;
   cursor: pointer;
-  font-family: "Roboto";
   font-size: 15px;
   line-height: 22px;
   letter-spacing: -0.02em;
@@ -172,7 +163,6 @@ legend {
   border: 1px solid #e4e4e4;
   background-color: #007bff;
   color: #fff;
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
@@ -187,7 +177,6 @@ legend {
 }
 .terms p {
   color: #969696;
-  font-family: "Roboto";
   font-size: 13px;
   width: 410px;
   line-height: 18px;
@@ -202,7 +191,6 @@ legend {
 }
 .log-in {
   width: 500px;
-  font-family: "Roboto";
   text-align: center;
 }
 .log-in span {
