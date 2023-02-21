@@ -29,7 +29,7 @@ legend {
 .form__item {
   display: inline-block;
   padding-top: 24px;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 .form__item:nth-last-child(2) {
   margin-right: 0;
