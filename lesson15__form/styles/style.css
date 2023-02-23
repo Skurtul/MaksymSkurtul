@@ -62,6 +62,9 @@ legend {
 	outline: 1px solid #007bff;
 	border: 1px solid transparent;
 }
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
 .input:invalid {
 	outline: 1px solid #ff4343;
 	border: 1px solid transparent;

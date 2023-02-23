@@ -22,20 +22,20 @@
                     <label class="label" for="first-name">
                         First Name
                     </label>
-                    <input id="first-name" type="text" placeholder="John" class="input">
+                    <input id="first-name" type="text" name="First Name" placeholder="John" class="input" autocomplete="off">
                 </div>
                 <div class="form__item">
                     <label class="label" for="last-name">
                         Last Name
                     </label>
-                    <input id="last-name" type="text" placeholder="Smith" class="input">
+                    <input id="last-name" type="text" name="Last Name" placeholder="Smith" class="input" autocomplete="off">
                 </div>
                 <div class="form__item form__item--email">
                     <label class="label" for="e-mail">
                         E-mail
                     </label>
-                    <input id="e-mail" type="e-mail" placeholder="Your E-Mail" class="input" minlength="8"
-                        maxlength="320">
+                    <input id="e-mail" type="e-mail" name="E-Mail" placeholder="Your E-Mail" class="input"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" autocomplete="off">
                     <div class="form__item-message">
                         <span class="form__item-hint">We'll never share your email with anyone else.</span>
                         <span class="form__item-error">Invalid value</span>
@@ -58,10 +58,10 @@
                 <div class="form__item">
                     <label class="label"> Country
                         <select name="choose-a-country" class="select" required>
-                            <option value="front-end">Ukraine</option>
-                            <option value="design">Poland</option>
-                            <option value="back-end">Germany</option>
-                            <option value="marketing">Romania</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Romania">Romania</option>
                         </select>
                     </label>
                 </div>
@@ -72,7 +72,7 @@
                     <input id="city" type="text" placeholder="Your City" class="input" autocomplete="off">
                 </div>
 
-                    <button type="submit" class="registerbtn">Sign Up</button>
+                <button type="submit" class="registerbtn">Sign Up</button>
 
                 <div class="terms">
                     <p>
