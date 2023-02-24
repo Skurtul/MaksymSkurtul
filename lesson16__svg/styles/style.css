@@ -29,7 +29,7 @@ header, footer {
 	margin: 0 auto;
 	padding: 104px 0 104px 0;
 }
-.title-hint {
+.title__hint {
 	font-family: "Roboto";
 	font-size: 16px;
 	line-height: 21px;
@@ -43,7 +43,7 @@ h1 {
 	color: #16133d;
 	padding: 16px 0 40px;
 }
-.wrap__content {
+.content__wrap {
 	display: flex;
 	position: relative;
 	gap: 30px;
@@ -62,7 +62,7 @@ h1 {
 	font-family: "Roboto";
 	color: #16133d;
 }
-.icon {
+.icons__wrap {
 	display: flex;
 	justify-content: center;
 	position: absolute;
@@ -73,21 +73,21 @@ h1 {
 	border: 1px solid rgba(21, 101, 216, 0.1);
 	border-radius: 16px;
 }
-.icon__card {
+.icon__item {
 	display: flex;
 	align-self: center;
 }
-.icon__card--hover {
+.icon__item--hover {
 	display: none;
 }
 .card:hover {
 	transition: all 0.1s ease-in;
 	border: 1px solid rgba(61, 179, 112, 1);
 }
-.card:hover .icon{
+.card:hover .icons__wrap {
 	border: 1px solid rgba(61, 179, 112, 0.2)
 }
-.card:hover .icon__card--hover {
+.card:hover .icon__item--hover {
 	display: flex;
 	position: absolute;
 	justify-content: center;

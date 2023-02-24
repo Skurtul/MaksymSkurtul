@@ -6,8 +6,8 @@ body {
   height: 80px;
   border-bottom: 1px solid #bdbdbd;
 }
-.wrap__header,
-.wrap__footer {
+.header__wrap,
+.footer__wrap {
   display: flex;
   justify-content: space-around;
   width: 1440px;
@@ -60,8 +60,9 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.wrap__hero__head {
+.hero__head {
   display: flex;
+  flex-direction: column;
   background-color: #f6f6f6;
   padding-top: 150px;
   justify-content: center;
@@ -76,7 +77,7 @@ h1 {
   letter-spacing: 0.13em;
   padding-bottom: 24px;
 }
-.hero__head__item_line {
+.head__item_line {
   width: 45px;
   height: 4px;
   margin: 0 auto;
@@ -96,15 +97,15 @@ h1 {
   display: flex;
   padding-bottom: 150px;
 }
-.cat-teams__item_card {
+.card__item {
   margin: 0 auto;
   padding-right: 30px;
 }
-.cat-teams__item_card--fourth {
+.card__item_fourth {
   margin: 0 auto;
 }
-.cat-teams__item_card__name,
-.cat-teams__item_card__position {
+.card__item_name,
+.card__item_position {
   text-align: left;
   font-size: 18px;
   line-height: 22px;
@@ -112,7 +113,7 @@ h1 {
   color: #282528;
   padding-top: 24px;
 }
-.cat-teams__item_card__position {
+.card__item_position {
   font-weight: 300;
   color: #646464;
   padding-top: 8px;
@@ -120,7 +121,7 @@ h1 {
 .footer {
   display: flex;
 }
-.wrap__footer {
+.footer__wrap {
   padding: 40px 0 40px;
   flex-direction: column;
 }
@@ -130,15 +131,11 @@ h1 {
 .footer__menu ul {
   margin: 0;
 }
-.footer__menu a {
-  font-size: 18px;
-  line-height: 22px;
-}
-.footer__social a {
+.footer__socials a {
   padding-right: 16px;
   text-decoration: none;
 }
-.footer__social a:nth-child(5) {
+.footer__socials a:nth-child(5) {
   padding-right: 0;
 }
 
