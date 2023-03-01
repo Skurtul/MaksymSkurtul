@@ -36,14 +36,14 @@
   font-family: "Staatliches";
   text-transform: uppercase;
 }
-.menu__item--lang {
+.menu__item_lang {
   font-family: "Tourney";
   letter-spacing: 0.06em;
   padding-right: 50px;
 }
-.menu__item--using {
+/* .menu__item_using {
   word-spacing: normal;
-}
+} */
 .menu a {
   text-decoration: none;
   color: #000;
@@ -96,9 +96,9 @@ a:hover {
 }
 .img-background {
   position: absolute;
-  left: 324px;
+  left: 103px;
   top: 80px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .title {
   height: 76px;

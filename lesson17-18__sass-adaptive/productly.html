@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="styles/css/normalize.css" rel="stylesheet">
     <link href="styles/css/style.css" rel="stylesheet">
+    <link href="styles/css/media.css" rel="stylesheet">
     <title>Productly</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="wrap">
+        <div class="wrap header__wrap">
             <a href="#">
                 <img src="assets/images/logo/Logo.svg" alt="Logo Productly">
             </a>
@@ -32,44 +33,43 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header__buttons">
-                <input type="button" value="Sign In" class="header__buttons sign-in">
-                <input type="button" value="Sign Up" class="header__buttons up-now">
+            <div class="authorization__btn">
+                <input type="submit" value="Sign In" class="authorization__btn authorization__btn--sign-in">
+                <input type="submit" value="Sign Up" class="authorization__btn authorization__btn--up-now">
             </div>
         </div>
     </header>
     <section class="hero">
-        <div class="hero__wrap">
-            <div class="hero__head">
+        <div class="wrap hero__wrap">
+            <div class="hero__heading">
                 <h1>The Design Thinking superpowers</h1>
                 <p>Tools, tutorials, design and innovation experts, all in one place!
                     The most intuitive way to imagine your next user experience.
                 </p>
-                <div class="hero__started">
-                    <input type="button" value="Get Started" class="hero__started up-now">
+                <div class="authorization__btn">
+                    <input type="button" value="Get Started" class="authorization__btn authorization__btn--size-m">
                 </div>
             </div>
             <div class="hero__picture">
-                <img src="assets/images/picture/vectorhero.png" width="644" height="495" alt="Vector image">
+                <img src="assets/images/picture/vectorhero.svg" alt="Vector image">
             </div>
         </div>
     </section>
     <section class="features">
-        <div class="features__wrap">
-            <div class="features__head">
-                <h2>We design tools to unveil your superpowers</h2>
+        <div class=" wrap features__wrap">
+            <h2 class="features__heading-section">We design tools to unveil<br> your superpowers</h2>
             <div class="card">
-                <figure class="card__item_icon">
-                    <img src="assets/images/icons/iconfirstclick.png" width="50" height="50" alt="iconvector">
+                <figure class="card__item">
+                    <img class="card__item_icon" src="assets/images/icons/iconfirstclick.svg" alt="iconvector">
                     <figcaption class="card__head-text">
                         First click tests<br>
                         <span class="card__note-text">
-                            While most people enjoy casino gambling
+                            While most people enjoy casino<br> gambling
                         </span>
                     </figcaption>
                 </figure>
-                <figure class="card__item_icon">
-                    <img src="assets/images/icons/iconsurveys.png" width="50" height="50" alt="iconvector">
+                <figure class="card__item">
+                    <img class="card__item_icon" src="assets/images/icons/iconsurveys.svg" alt="iconvector">
                     <figcaption class="card__head-text">
                         Design surveys<br>
                         <span class="card__note-text">
@@ -77,73 +77,75 @@
                         </span>
                     </figcaption>
                 </figure>
-                <figure class="card__item_icon">
-                    <img src="assets/images/icons/iconpreference.png" width="50" height="50" alt="iconvector">
+                <figure class="card__item">
+                    <img class="card__item_icon" src="assets/images/icons/iconpreference.svg" alt="iconvector">
                     <figcaption class="card__head-text">
                         Preference tests<br>
                         <span class="card__note-text">
-                            The Myspace page defines the individual.
+                            The Myspace page defines the<br> individual.
                         </span>
                     </figcaption>
                 </figure>
-                <figure class="card__item_icon--fourth">
-                    <img src="assets/images/icons/iconfivesecond.png" width="50" height="50" alt="iconvector">
+                <figure class="card__item">
+                    <img class="card__item_icon" src="assets/images/icons/iconfivesecond.svg" alt="iconvector">
                     <figcaption class="card__head-text">Five second tests<br>
                         <span class="card__note-text">Personal choices and the overall personality of the person.
                         </span>
                     </figcaption>
                 </figure>
             </div>
-            <input type="button" value="Sign up Now" class="btn">
-        </div>
+            <div class="authorization__btn">
+                <input type="submit" value="Sign up Now" class="authorization__btn authorization__btn--size-m">
+            </div>
         </div>
     </section>
-    <img class="section__border" src="assets/images/picture/line.svg" width="1440">
     <footer class="footer">
-        <div class="footer wrap">
-            <a href="#">
-                <img src="assets/images/logo/Logo.svg" alt="Logo Productly">
-            </a>
-            <div class="menu menu__footer">
+        <div class="footer__wrap">
+            <div class="footer__form">
+                <label class="footer__form_heading">Knowing you're always on<br> the best energy deal.
+                    <input class="footer__form_input" type="tel" placeholder="Enter your phone Number" name="tel">
+                    <input class="authorization__btn authorization__btn--size-m" type="submit" value="Sign up Now">
+                </label>
+            </div>
+            <div class="footer__menu">
                 <ul>
-                    <li class="footer menu__item--head">Quick Links
+                    <span class="footer__menu_heading">Quick Links
+                    </span>
+                    <li class="menu__item">
+                        <a class="footer__menu_link" href="#">About Us</a>
                     </li>
-                    <li class="footer__menu__item">
-                        <a href="#">About Us</a>
+                    <li class="menu__item">
+                        <a class="footer__menu_link" href="#">Blog</a>
                     </li>
-                    <li class="footer__menu__item">
-                        <a href="#">Blog</a>
+                    <li class="menu__item">
+                        <a class="footer__menu_link" href="#">Contact</a>
                     </li>
-                    <li class="footer__menu__item">
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#">FAQ</a>
+                    <li class="menu__item">
+                        <a class="footer__menu_link" href="#">FAQ</a>
                     </li>
                 </ul>
                 <ul>
-                    <li class="footer menu__item--head">
+                    <span class="footer__menu_heading">
                         Legal Stuff
+                    </span>
+                    <li class="menu__item">
+                        <a class="footer__menu_link" href="#">Disclaimer</a>
                     </li>
-                    <li class="footer__menu__item">
-                        <a href="#">Disclaimer</a>
+                    <li class="menu__item">
+                        <a class="footer__menu_link" href="#">Financing</a>
                     </li>
-                    <li class="footer__menu__item">
-                        <a href="#">Financing</a>
+                    <li class="menu__item">
+                        <a class="footer__menu_link" href="#">Privacy Policy</a>
                     </li>
-                    <li class="footer__menu__item"> klfdkvl
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li class="footer__menu__item">
-                        <a href="#">Terms of Service</a>
+                    <li class="menu__item">
+                        <a class="footer__menu_link" href="#">Terms of Service</a>
                     </li>
                 </ul>
             </div>
-            <div class="form__footer">
-                <label>Knowing you're always on the best energy deal.
-                    <input type="tel" placeholder="Enter your phone Number" name="tel">
-                    <input type="submit" value="Sign up Now" class="btn">
-                </label>
+            <div class="footer__logo">
+                <a href="#">
+                    <img src="assets/images/logo/Logo.svg" alt="Logo Productly">
+                </a>
             </div>
         </div>
     </footer>

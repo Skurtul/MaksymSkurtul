@@ -1,0 +1,338 @@
+@media all and (min-width: 1024px) and (max-width: 1199.5px) {
+	h1 {
+		font-size: 32px;
+		line-height: 40px;
+		padding-bottom: 24px;
+	}
+
+	.header {
+		&__wrap {
+			flex-direction: column;
+			gap: 24px;
+		}
+	}
+
+	.authorization__btn {
+		&--sign-in {
+			width: 162px;
+		}
+
+		&--up-now {
+			width: 162px;
+		}
+
+		&--size-m {
+			width: 340px;
+		}
+	}
+	.hero {
+		&__wrap {
+			gap: 60px;
+			justify-content: center;
+		}
+
+		&__picture {
+			width: 438px;
+			height: 337px;
+		}
+
+		&__heading {
+			width: 38%;
+		}
+
+		&__heading p {
+			font-size: 18px;
+			padding-bottom: 24px;
+		}
+	}
+
+	.features {
+		background: url(/assets/images/picture/bg.png) bottom
+			no-repeat;
+		background-size: cover;
+		box-sizing: border-box;
+
+		&__wrap {
+			width: 64%;
+			margin: 0 auto;
+			padding-bottom: 72px;
+		}
+
+		&__heading-section {
+			font-size: 29px;
+			line-height: 36px;
+			padding-bottom: 48px;
+		}
+	}
+
+	.card {
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 80px;
+		padding-bottom: 16px;
+
+		&__item_icon {
+			width: 40px;
+			height: 40px;
+		}
+
+		&__head-text {
+			font-size: 18px;
+			padding-top: 16px;
+		}
+
+		&__note-text {
+			padding: 8px 0 32px;
+		}
+	}
+
+	.footer {
+		
+		&__wrap {
+			column-gap: 188px;
+			row-gap: 64px;
+			flex-wrap: wrap;
+			justify-content: center;
+
+		}
+
+		&__menu {
+			column-gap: 96px;
+		}
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 1023.5px) {
+	h1 {
+		font-size: 27px;
+		line-height: 32px;
+		padding-bottom: 24px;
+	}
+
+	.header {
+		&__wrap {
+			flex-direction: column;
+			gap: 24px;
+		}
+	}
+
+	.authorization__btn {
+		&--sign-in {
+			width: 162px;
+		}
+
+		&--up-now {
+			width: 162px;
+		}
+
+		&--size-m {
+			width: 324px;
+			padding: 0;
+		}
+	}
+	.hero {
+		&__wrap {
+			justify-content: center;
+			gap: 40px;
+		}
+
+		&__picture {
+			width: 320px;
+			height: 248px;
+		}
+
+		&__heading {
+			width: 324px;
+		}
+
+		&__heading p {
+			font-size: 16px;
+			padding-bottom: 24px;
+		}
+	}
+
+	.features {
+		background: url(/assets/images/picture/bg.png) bottom
+			no-repeat;
+		background-size: cover;
+		box-sizing: border-box;
+
+		&__wrap {
+			width: 79%;
+			padding-bottom: 72px;
+			margin: 0 auto;
+		}
+
+		&__heading-section {
+			font-size: 24px;
+			line-height: 32px;
+			padding-bottom: 48px;
+		}
+	}
+
+	.card {
+		flex-wrap: wrap;
+		padding-bottom: 16px;
+		justify-content: center;
+		column-gap: 64px;
+
+		&__item_icon {
+			width: 40px;
+			height: 40px;
+		}
+
+		&__head-text {
+			font-size: 18px;
+			padding-top: 16px;
+		}
+
+		&__note-text {
+			padding: 8px 0 32px;
+		}
+	}
+
+	.footer {
+		padding-top: 56px;
+		row-gap: 56px;
+
+		&__wrap {
+			flex-direction: column-reverse;
+			align-items: center;
+			gap: 40px;
+		}
+
+		&__menu {
+			gap: 76px;
+		}
+
+		&__form {
+			text-align: center;
+
+			&_input {
+				box-sizing: border-box;
+				width: 316px;
+			}
+		}
+	}
+}
+
+@media all and (min-width: 375px) and (max-width: 767.5px) {
+	h1 {
+		font-size: 25px;
+		line-height: 32px;
+	}
+
+	.header {
+		padding: 32px 0 56px;
+
+		&__wrap {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		&__menu a {
+			font-size: 14px;
+		}
+	}
+
+	.authorization__btn {
+		&--sign-in {
+			width: 144px;
+		}
+
+		&--up-now {
+			width: 144px;
+		}
+
+		&--size-m {
+			width: 324px;
+			padding: 0;
+		}
+	}
+	.hero {
+		padding-bottom: 56px;
+
+		&__wrap {
+			flex-direction: column;
+			max-width: 327px;
+			gap: 56px;
+		}
+
+		&__picture {
+			height: 250px;
+			margin: 0;
+		}
+
+		&__heading {
+			padding: 0;
+		}
+
+		&__heading p {
+			font-size: 16px;
+		}
+	}
+
+	.features {
+		margin: 0;
+		// padding-bottom: 72px;
+		background: none;
+		
+		&__wrap {
+			max-width: 327px;
+			padding: 0;
+		}
+
+		&__heading-section {
+			font-size: 22px;
+			line-height: 28px;
+			padding-bottom: 40px;
+		}
+	}
+
+	.card {
+		flex-wrap: wrap;
+
+		&__item_icon {
+			width: 40px;
+			height: 40px;
+		}
+
+		&__head-text {
+			font-size: 18px;
+			padding-top: 16px;
+		}
+
+		&__note-text {
+			font-size: 16px;
+			padding: 8px 0 32px;
+		}
+	}
+
+	.footer {
+		row-gap: 56px;
+		padding: 0;
+
+		&__wrap {
+			flex-direction: column-reverse;
+			align-items: center;
+			gap: 40px;
+			padding: 56px 0 72px;
+		}
+
+		&__menu {
+			gap: 86px;
+
+			&_heading {
+				font-size: 18px;
+			}
+		}
+
+		&__form {
+			text-align: left;
+
+			&_input {
+				width: 324px;
+			}
+		}
+	}
+}
