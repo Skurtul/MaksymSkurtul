@@ -111,7 +111,7 @@ h1 {
   color: #2f281e;
   font-family: "Montserrat";
   justify-content: center;
-  background: url(/assets/images/picture/bg.png) bottom no-repeat;
+  background: url(../../assets/images/picture/bg.png) bottom no-repeat;
   background-size: cover;
   box-sizing: border-box;
 }
