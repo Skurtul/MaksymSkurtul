@@ -192,6 +192,9 @@ h1 {
   display: flex;
   gap: 135px;
 }
+.footer__menu_link {
+  line-height: 40px;
+}
 .footer__menu_heading {
   display: inline-block;
   font-size: 20px;

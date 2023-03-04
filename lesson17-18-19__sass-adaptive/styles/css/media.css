@@ -109,9 +109,21 @@
     left: 0;
     padding: 0;
     z-index: 10;
+    border-bottom: 1px solid rgba(188, 208, 229, 0.5);
   }
   .open .header__menu {
-    transform: translateX(100%);
+    transform: translateX(0);
+  }
+  .open .header__burger::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .open .header__burger::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .open .header__burger span {
+    transform: scale(0);
   }
   .header__body {
     flex-direction: row-reverse;
@@ -121,7 +133,7 @@
     max-width: 1200px;
     justify-content: space-between;
     position: relative;
-    height: 56px;
+    height: 64px;
     z-index: 4;
     background-color: #fff;
     align-items: center;
@@ -137,7 +149,7 @@
     flex-direction: column;
   }
   .header__link {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 40px;
   }
   .header__burger {
@@ -145,8 +157,8 @@
     display: block;
     right: 24px;
     position: relative;
-    width: 33px;
-    height: 22px;
+    width: 32px;
+    height: 20px;
     z-index: 3;
     cursor: pointer;
     background-color: #fff;
@@ -158,7 +170,7 @@
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    top: 10px;
+    top: 9px;
   }
   .header__burger::before, .header__burger::after {
     content: "";
@@ -178,16 +190,18 @@
   .header__menu {
     display: flex;
     flex-direction: column;
+    transform: translateX(100%);
     align-items: center;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    padding-top: 82px;
+    padding-top: 90px;
     text-align: center;
     transition: transform 0.5s;
     background-color: #fff;
+    border-bottom: 1px solid #2f281e;
   }
   .header__menu__item {
     flex-direction: column;
@@ -277,20 +291,10 @@
     flex-direction: column;
     gap: 24px;
   }
-  .header__list {
-    gap: 20px;
-  }
-  .header__list a {
-    font-size: 14px;
-  }
   .authorization__btn {
-    gap: 32px;
     margin: 0 auto;
   }
   .btn {
-    width: 144px;
-  }
-  .btn--size-m {
     width: 320px;
     padding: 0;
   }
@@ -326,7 +330,6 @@
     padding-bottom: 40px;
   }
   .card {
-    flex-wrap: wrap;
     justify-content: space-between;
   }
   .card__item_icon {

@@ -116,7 +116,6 @@
 	}
 
 	.btn {
-		
 		&--sign-in {
 			display: flex;
 			width: 320px;
@@ -136,7 +135,7 @@
 			}
 		}
 	}
-
+	
 	.header {
 		position: fixed;
 		width: 100%;
@@ -144,9 +143,24 @@
 		left: 0;
 		padding: 0;
 		z-index: 10;
+		border-bottom: 1px solid rgb(188, 208, 229, 0.5);
 
 		.open &__menu {
-			transform: translateX(100%);
+			transform: translateX(0);
+		}
+
+		.open &__burger::before {
+			transform: rotate(45deg);
+			top: 9px;
+		}
+
+		.open &__burger::after {
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+
+		.open &__burger span {
+			transform: scale(0);
 		}
 
 		&__body {
@@ -157,10 +171,11 @@
 			max-width: 1200px;
 			justify-content: space-between;
 			position: relative;
-			height: 56px;
+			height: 64px;
 			z-index: 4;
 			background-color: #fff;
 			align-items: center;
+
 		}
 
 		&__logo {
@@ -176,7 +191,7 @@
 		}
 
 		&__link {
-			font-size: 24px;
+			font-size: 22px;
 			line-height: 40px;
 		}
 
@@ -185,8 +200,8 @@
 			display: block;
 			right: 24px;
 			position: relative;
-			width: 33px;
-			height: 22px;
+			width: 32px;
+			height: 20px;
 			z-index: 3;
 			cursor: pointer;
 			background-color: #fff;
@@ -198,7 +213,7 @@
 				width: 100%;
 				height: 2px;
 				border-radius: 4px;
-				top: 10px;
+				top: 9px;
 			}
 		}
 
@@ -224,21 +239,24 @@
 		&__menu {
 			display: flex;
 			flex-direction: column;
+			transform: translateX(100%);
 			align-items: center;
 			position: fixed;
 			left: 0;
 			top: 0;
 			width: 100%;
 			height: 100%;
-			padding-top: 82px;
+			padding-top: 90px;
 			text-align: center;
 			transition: transform 0.5s;
 			background-color: #fff;
+			border-bottom: 1px solid #2f281e;
 
-		&__item {
-			flex-direction: column;
+
+			&__item {
+				flex-direction: column;
+			}
 		}
-	}
 	}
 
 	.header:before {
@@ -347,34 +365,19 @@
 	}
 
 	.header {
-		// padding: 32px 0 56px;
-
 		&__wrap {
 			flex-direction: column;
 			gap: 24px;
 		}
-
-		&__list {
-			gap: 20px;
-		}
-
-		&__list a {
-			font-size: 14px;
-		}
 	}
 
 	.authorization__btn {
-		gap: 32px;
 		margin: 0 auto;
 	}
 
 	.btn {
-		width: 144px;
-
-		&--size-m {
-			width: 320px;
-			padding: 0;
-		}
+		width: 320px;
+		padding: 0;
 	}
 
 	.hero {
@@ -417,7 +420,6 @@
 	}
 
 	.card {
-		flex-wrap: wrap;
 		justify-content: space-between;
 
 		&__item_icon {
