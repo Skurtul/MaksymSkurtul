@@ -135,55 +135,28 @@
 			}
 		}
 	}
-	
+
 	.header {
 		position: fixed;
 		width: 100%;
-		top: 0;
-		left: 0;
 		padding: 0;
 		z-index: 10;
 		border-bottom: 1px solid rgb(188, 208, 229, 0.5);
 
-		.open &__menu {
-			transform: translateX(0);
-		}
-
-		.open &__burger::before {
-			transform: rotate(45deg);
-			top: 9px;
-		}
-
-		.open &__burger::after {
-			transform: rotate(-45deg);
-			bottom: 9px;
-		}
-
-		.open &__burger span {
-			transform: scale(0);
-		}
-
 		&__body {
 			flex-direction: row-reverse;
-			gap: 0;
-			display: flex;
-			width: 100%;
-			max-width: 1200px;
 			justify-content: space-between;
-			position: relative;
 			height: 64px;
-			z-index: 4;
 			background-color: #fff;
-			align-items: center;
-
 		}
 
 		&__logo {
-			display: block;
+			display: flex;
+			align-items: center;
 			position: relative;
 			left: 24px;
 			z-index: 3;
-			order: 2;
+			order: 1;
 		}
 
 		&__list {
@@ -237,12 +210,9 @@
 		}
 
 		&__menu {
-			display: flex;
 			flex-direction: column;
 			transform: translateX(100%);
-			align-items: center;
 			position: fixed;
-			left: 0;
 			top: 0;
 			width: 100%;
 			height: 100%;
@@ -251,22 +221,25 @@
 			transition: transform 0.5s;
 			background-color: #fff;
 			border-bottom: 1px solid #2f281e;
-
-
-			&__item {
-				flex-direction: column;
-			}
 		}
-	}
 
-	.header:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 2;
+		.open &__menu {
+			transform: translateX(0);
+		}
+
+		.open &__burger::before {
+			transform: rotate(45deg);
+			top: 9px;
+		}
+
+		.open &__burger::after {
+			transform: rotate(-45deg);
+			bottom: 9px;
+		}
+
+		.open &__burger span {
+			transform: scale(0);
+		}
 	}
 
 	.btn {
