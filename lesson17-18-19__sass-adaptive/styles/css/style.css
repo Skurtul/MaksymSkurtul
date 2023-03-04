@@ -37,22 +37,26 @@ h1 {
   width: 100%;
   max-width: 1200px;
 }
-.header__menu {
+.header__body {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  gap: 200px;
+  width: 100%;
   margin: 0 auto;
 }
 .header__burger {
   display: none;
 }
-.header__list {
+.header__menu {
   display: flex;
   align-items: center;
   gap: 184px;
 }
-.header__list__item {
+.header__menu__item {
+  display: flex;
+  gap: 24px;
+}
+.header__list {
   display: flex;
   gap: 24px;
 }
