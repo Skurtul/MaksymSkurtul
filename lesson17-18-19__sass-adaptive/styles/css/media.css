@@ -7,12 +7,12 @@
   .authorization__btn {
     gap: 24px;
   }
-  .header__container {
-    justify-content: center;
+  .header__menu {
+    justify-content: space-between;
     gap: 37px;
     align-items: center;
   }
-  .header__menu {
+  .header__list {
     gap: 32px;
   }
   .header__logo img {
@@ -84,7 +84,18 @@
   }
   .authorization__btn {
     gap: 35px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn--sign-in {
+    display: flex;
+    width: 320px;
+    align-items: flex-end;
+  }
+  .btn--up-now {
+    display: flex;
+    z-index: 10;
+    width: 320px;
   }
   .header {
     position: fixed;
@@ -94,10 +105,10 @@
     padding: 0;
     z-index: 10;
   }
-  .open .header__menu {
+  .open .header__list {
     transform: translateX(100%);
   }
-  .header__container {
+  .header__menu {
     flex-direction: row-reverse;
     gap: 0;
     display: flex;
@@ -156,7 +167,7 @@
   .header__burger::after {
     bottom: 0;
   }
-  .header__menu {
+  .header__list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,6 +181,9 @@
     text-align: center;
     transition: transform 0.5s;
     background-color: #fff;
+  }
+  .header__list__item {
+    flex-direction: column;
   }
   .header:before {
     content: "";
@@ -256,10 +270,10 @@
     flex-direction: column;
     gap: 24px;
   }
-  .header__menu {
+  .header__list {
     gap: 20px;
   }
-  .header__menu a {
+  .header__list a {
     font-size: 14px;
   }
   .authorization__btn {

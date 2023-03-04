@@ -21,8 +21,8 @@ h1 {
 }
 
 .menu__item {
-	display: flex;
 	list-style: none;
+	// padding-bottom: 16px;
 	font-size: 16px;
 	font-family: "Montserrat", sans-serif;
 	line-height: 26px;
@@ -40,13 +40,27 @@ h1 {
 		max-width: 1200px;
 	}
 
+	&__menu {
+		display: flex;
+		align-items: center;
+		max-width: 1200px;
+		gap: 200px;
+		margin: 0 auto;
+	}
+
 	&__burger {
 		display: none;
 	}
 
-	&__menu {
+	&__list {
 		display: flex;
-		gap: 24px;
+		align-items: center;
+		gap: 184px;
+
+		&__item {
+			display: flex;
+			gap: 24px;
+		}
 	}
 
 	&__menu a:hover {
@@ -200,10 +214,6 @@ h1 {
 			font-family: "Gotham", sans-serif;
 			color: #2f281e;
 			padding-bottom: 30px;
-		}
-
-		&_link {
-			padding-bottom: 16px;
 		}
 
 		&_link:hover {

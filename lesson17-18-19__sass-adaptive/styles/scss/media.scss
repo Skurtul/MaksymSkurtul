@@ -10,13 +10,13 @@
 	}
 
 	.header {
-		&__container {
-			justify-content: center;
+		&__menu {
+			justify-content: space-between;
 			gap: 37px;
 			align-items: center;
 		}
 
-		&__menu {
+		&__list {
 			gap: 32px;
 		}
 
@@ -112,13 +112,26 @@
 
 	.authorization__btn {
 		gap: 35px;
-		display: block;
-
+		display: flex;
+		flex-direction: column;
 	}
 
-	// .menu__item {
-	// 	margin-bottom: 20px;
-	// }
+	.btn {
+		&--sign-in {
+			display: flex;
+			width: 320px;
+			// z-index: 1;
+			align-items: flex-end;
+			// position: absolute;
+			// top: 400px;
+		}
+
+		&--up-now {
+			display: flex;
+			z-index: 10;
+			width: 320px;
+		}
+	}
 
 	.header {
 		position: fixed;
@@ -128,11 +141,11 @@
 		padding: 0;
 		z-index: 10;
 
-		.open &__menu {
-			transform: translateX(100%)
-		} 
+		.open &__list {
+			transform: translateX(100%);
+		}
 
-		&__container {
+		&__menu {
 			flex-direction: row-reverse;
 			gap: 0;
 			display: flex;
@@ -200,7 +213,7 @@
 			bottom: 0;
 		}
 
-		&__menu {
+		&__list {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -212,9 +225,13 @@
 			height: 100%;
 			padding-top: 82px;
 			text-align: center;
-			transition: transform .5s;
+			transition: transform 0.5s;
 			background-color: #fff;
+
+		&__item {
+			flex-direction: column;
 		}
+	}
 	}
 
 	.header:before {
@@ -330,11 +347,11 @@
 			gap: 24px;
 		}
 
-		&__menu {
+		&__list {
 			gap: 20px;
 		}
 
-		&__menu a {
+		&__list a {
 			font-size: 14px;
 		}
 	}

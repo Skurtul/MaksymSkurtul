@@ -20,7 +20,6 @@ h1 {
 }
 
 .menu__item {
-  display: flex;
   list-style: none;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -38,10 +37,22 @@ h1 {
   width: 100%;
   max-width: 1200px;
 }
+.header__menu {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  gap: 200px;
+  margin: 0 auto;
+}
 .header__burger {
   display: none;
 }
-.header__menu {
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 184px;
+}
+.header__list__item {
   display: flex;
   gap: 24px;
 }
@@ -185,9 +196,6 @@ h1 {
   font-family: "Gotham", sans-serif;
   color: #2f281e;
   padding-bottom: 30px;
-}
-.footer__menu_link {
-  padding-bottom: 16px;
 }
 .footer__menu_link:hover {
   color: #ff9900;
