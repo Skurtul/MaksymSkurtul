@@ -1,0 +1,12 @@
+@media all and (min-width: 768px) {
+  .main {
+    height: 100vh;
+    padding: 0;
+  }
+  .main__body {
+    max-width: 82%;
+  }
+  .main__body__content {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=media.css.map */

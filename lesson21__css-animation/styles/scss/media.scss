@@ -1,0 +1,17 @@
+@media all and (min-width: 768px) {
+
+    .main {
+        height: 100vh;
+        padding: 0;
+    
+    &__body {
+        max-width: 82%;
+
+        &__content {
+            flex-direction: row;
+        }
+    }
+    } 
+
+
+}
