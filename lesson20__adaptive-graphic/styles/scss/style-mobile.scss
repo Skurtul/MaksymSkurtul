@@ -1,0 +1,147 @@
+@import url(../../assets/fonts/lato/lato.css);
+@import url(../../assets/fonts/red-hat/red-hat.css);
+
+h1 {
+	font-family: "Red Hat Display", sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 50px;
+	padding-bottom: 20px;
+}
+
+.wrap {
+	display: flex;
+	flex-direction: column;
+	max-width: 94%;
+	margin: 0 auto;
+	gap: 70px;
+}
+
+.header {
+	width: 100%;
+	padding: 18px 0 18px 0;
+
+	&__logo {
+		font-family: "Lato", sans-serif;
+		font-size: 16px;
+		line-height: 24px;
+		text-transform: uppercase;
+		letter-spacing: 0.5em;
+	}
+}
+
+.hero {
+	width: 100%;
+	padding-bottom: 70px;
+
+	&__body {
+		
+		&__content {
+			padding-top: 20px;
+
+			&-img {
+				width: 100%;
+			}
+		}
+
+		&-title {
+			font-family: "Red Hat Display", sans-serif;
+			font-weight: 600;
+			font-size: 26px;
+			line-height: 43px;
+			letter-spacing: 0.1em;
+			padding-bottom: 20px;
+		}
+
+		&-description {
+			font-family: "Lato", sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 32px;
+			letter-spacing: 0.03em;
+			color: #565656;
+			padding-top: 20px;
+		}
+	}
+}
+
+.footer {
+	width: 100%;
+	background-color: #f4f4f4;
+	padding: 50px 0 50px 0;
+
+	&__wrap {
+		gap: 40px;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	
+	&__cta {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		&-title {
+			font-size: 32px;
+			font-weight: 400;
+			font-family: "Red Hat Display", sans-serif;
+			letter-spacing: 0.05em;
+			text-align: center;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 15px;
+		font-family: "Lato", sans-serif;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: 0.1em;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: center;
+		gap: 23px;
+
+		&-socials {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			border: 1px solid #565656;
+
+			&-icon {
+				width: 31px;
+				height: 24px;
+				fill: #565656;
+			}
+		}
+
+		&-socials:hover {
+			background-color: #565656;
+		}
+
+		&-socials:hover &-socials-icon {
+			fill: #fff;
+		}
+	}
+}
+
+	&__copyright {
+		text-align: center;
+
+		&-ink {
+			font-family: "Lato", sans-serif;
+			font-size: 16px;
+			line-height: 26px;
+			letter-spacing: 0.1em;
+		}
+	}
+}
