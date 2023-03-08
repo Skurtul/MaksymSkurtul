@@ -1,5 +1,6 @@
 @import url(../../assets/fonts/lato/lato.css);
 @import url(../../assets/fonts/red-hat/red-hat.css);
+
 h1 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 600;
@@ -123,4 +124,79 @@ h1 {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.1em;
+}
+
+@media all and (min-width: 768px) {
+  h1 {
+    font-size: 33px;
+    padding-bottom: 25px;
+  }
+  .wrap {
+    width: 91%;
+  }
+  .hero {
+    padding: 50px 0 90px 0;
+  }
+  .hero__body__first-screen {
+    padding-bottom: 20px;
+  }
+  .hero__body-title {
+    font-size: 28px;
+    line-height: 45px;
+    padding-bottom: 25px;
+  }
+  .hero__body-description {
+    font-size: 19px;
+    padding-top: 25px;
+  }
+  .hero__body__content {
+    padding-top: 25px;
+  }
+  .footer__wrap {
+    width: 50%;
+  }
+  .footer__cta-title {
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+  }
+  .footer__copyright-ink {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media all and (min-width: 1440px) {
+  h1 {
+    font-size: 48px;
+    line-height: 64px;
+    padding-bottom: 45px;
+  }
+  .wrap {
+    width: 81%;
+  }
+  .header {
+    padding: 38px 0 38px 0;
+  }
+  .footer {
+    padding: 70px 0 30px 0;
+  }
+  .footer__wrap {
+    gap: 24px;
+  }
+  .footer__body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 516px;
+  }
+  .footer__body__cta-title {
+    text-align: left;
+  }
+  .footer__body__contacts {
+    text-align: left;
+  }
+  .footer__body__copyright {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style-mobile.css.map */
