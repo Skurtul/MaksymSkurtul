@@ -17,7 +17,7 @@
 }
 .main .content__link-front, .main .content__link-back {
   display: flex;
-  transition: all 2s ease;
+  transition: all 0.8s ease;
   backface-visibility: hidden;
 }
 .main .content__link-front {
@@ -34,6 +34,7 @@
   border: 2px solid #000;
   border-radius: 10px;
   transform: rotateY(180deg);
+  transition: all 0.8s ease;
 }
 .main .content__img-front {
   width: 330px;
@@ -41,17 +42,17 @@
 }
 .main .content__card:hover .content__link-front {
   transform: rotateY(180deg);
-  transition: all 2s ease-in;
+  transition: all 0.8s ease;
 }
 .main .content__card:hover .content__link-back {
-  transform: rotateY(180deg);
-  transition: all 2s ease-in;
+  transform: rotateY(360deg);
+  transition: all 0.7s ease;
   background-color: #ffffff;
   fill: #ffffff;
 }
 .main .content__card:hover .icons {
   transform: rotateY(360deg);
-  transition: all 2s ease-in;
+  transition: all 1s ease-out;
 }
 
 .icon__suit {
@@ -61,6 +62,9 @@
   fill: #b50101;
   width: 32px;
   height: 32px;
+}
+.icon__suit--bottom-right {
+  transform: rotate(180deg);
 }
 .icon__suit--bigger {
   width: 64px;
@@ -75,13 +79,16 @@
   width: 45px;
   height: 45px;
 }
+.icon__senioruty--bottom-right {
+  transform: rotate(180deg);
+}
 
 .icons {
   backface-visibility: hidden;
   position: absolute;
   top: 16px;
   transform: rotateY(180deg);
-  transition: all 0.2s ease;
+  transition: all 1s ease-out;
 }
 
 .icons--bottom-right {

@@ -19,7 +19,7 @@
 		&__link-front,
 		&__link-back {
 			display: flex;
-			transition: all 2s ease;
+			transition: all 0.8s ease;
 			backface-visibility: hidden;
 		}
 
@@ -38,6 +38,8 @@
 			border: 2px solid #000;
 			border-radius: 10px;
 			transform: rotateY(180deg);
+			transition: all 0.8s ease;
+
 		}
 
 		&__img-front {
@@ -47,19 +49,19 @@
 
 		&__card:hover .content__link-front {
 			transform: rotateY(180deg);
-			transition: all 2s ease-in;
+			transition: all 0.8s ease;
 		}
 
 		&__card:hover .content__link-back {
-			transform: rotateY(180deg);
-			transition: all 2s ease-in;
+			transform: rotateY(360deg);
+			transition: all 0.7s ease;
 			background-color: #ffffff;
 			fill: #ffffff;
 		}
 
 		&__card:hover .icons {
 			transform: rotateY(360deg);
-			transition: all 2s ease-in;
+			transition: all 1s ease-out;
 		}
 	}
 }
@@ -71,6 +73,10 @@
 	fill: #b50101;
 	width: 32px;
 	height: 32px;
+
+	&--bottom-right {
+		transform: rotate(180deg);
+	}
 
 	&--bigger {
 		width: 64px;
@@ -85,6 +91,10 @@
 	fill: #000;
 	width: 45px;
 	height: 45px;
+
+	&--bottom-right {
+		transform: rotate(180deg);
+	}
 }
 
 .icons {
@@ -92,7 +102,7 @@
 	position: absolute;
 	top: 16px;
 	transform: rotateY(180deg);
-	transition: all 0.2s ease;
+	transition: all 1s ease-out;
 }
 
 .icons--bottom-right {
