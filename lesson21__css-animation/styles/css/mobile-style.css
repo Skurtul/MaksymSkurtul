@@ -13,7 +13,11 @@
 .main .content {
   display: flex;
   position: relative;
-  gap: 80px;
+  width: 1140px;
+  gap: 72px;
+}
+.main .content__card {
+  width: 29%;
 }
 .main .content__link-front, .main .content__link-back {
   display: flex;
@@ -37,7 +41,7 @@
   transition: all 0.8s ease;
 }
 .main .content__img-front {
-  width: 330px;
+  width: 100%;
   height: 414px;
 }
 .main .content__card:hover .content__link-front {
