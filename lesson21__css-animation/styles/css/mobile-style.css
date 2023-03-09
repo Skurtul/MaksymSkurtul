@@ -5,38 +5,91 @@
 .main {
   display: flex;
   align-items: center;
-  padding: 50px 0 50px 0;
-  width: 100%;
+  height: 100vh;
 }
-.main__body {
-  max-width: 50%;
+.main .hero {
   margin: 0 auto;
 }
-.main__body__content {
+.main .content {
   display: flex;
-  flex-direction: column;
-  gap: 70px;
+  position: relative;
+  gap: 80px;
 }
-.main__body__content-card-front, .main__body__content-card-back {
+.main .content__link-front, .main .content__link-back {
   display: flex;
-  transition: all 1s ease;
+  transition: all 2s ease;
   backface-visibility: hidden;
-  background-color: #2d2525;
 }
-.main__body__content-card-back {
-  transform: rotateX(180deg);
+.main .content__link-front {
+  position: relative;
+  z-index: 10;
 }
-.main__body__content-card-img {
-  width: 100%;
+.main .content__link-back {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 29%;
+  height: 414px;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  transform: rotateY(180deg);
 }
-.main .main__body__content-card:hover .main__body__content-card-front {
-  transform: rotateX(180deg);
-  transition: all 1s ease-in;
-  background-color: #000000;
+.main .content__img-front {
+  width: 330px;
+  height: 414px;
 }
-.main .main__body__content-card:hover .main__body__content-card-back {
-  transform: rotateY(360deg);
-  transition: all 1s ease-in;
-  background-color: #000000;
+.main .content__card:hover .content__link-front {
+  transform: rotateY(180deg);
+  transition: all 2s ease-in;
+}
+.main .content__card:hover .content__link-back {
+  transform: rotateY(180deg);
+  transition: all 2s ease-in;
+  background-color: #ffffff;
   fill: #ffffff;
+}
+.main .content__card:hover .icons {
+  transform: rotateY(360deg);
+  transition: all 2s ease-in;
+}
+
+.icon__suit {
+  top: 72px;
+  left: 24px;
+  position: relative;
+  fill: #b50101;
+  width: 32px;
+  height: 32px;
+}
+.icon__suit--bigger {
+  width: 64px;
+  height: 64px;
+}
+
+.icon__senioruty {
+  top: 16px;
+  left: 18px;
+  position: absolute;
+  fill: #000;
+  width: 45px;
+  height: 45px;
+}
+
+.icons {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 16px;
+  transform: rotateY(180deg);
+  transition: all 0.2s ease;
+}
+
+.icons--bottom-right {
+  top: 292px;
+  left: 254px;
+}
+
+.icons--center {
+  top: 100px;
+  left: 116px;
 }/*# sourceMappingURL=mobile-style.css.map */
