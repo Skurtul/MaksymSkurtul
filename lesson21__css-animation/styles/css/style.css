@@ -1,44 +1,35 @@
-* {
-  margin: 0;
-}
-
 .main {
   display: flex;
   align-items: center;
   height: 100vh;
 }
-.main .hero {
-  margin: 0 auto;
-}
 .main .content {
   display: flex;
   position: relative;
+  margin: 0 auto;
   width: 1140px;
   gap: 72px;
 }
 .main .content__card {
-  width: 29%;
+  position: relative;
 }
 .main .content__link-front, .main .content__link-back {
-  display: flex;
+  display: block;
   transition: all 0.8s ease;
   backface-visibility: hidden;
 }
 .main .content__link-front {
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 .main .content__link-back {
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  width: 29%;
+  width: 100%;
   height: 414px;
-  background-color: #ffffff;
   border: 2px solid #000;
   border-radius: 10px;
-  transform: rotateY(180deg);
-  transition: all 0.8s ease;
 }
 .main .content__img-front {
   width: 100%;
@@ -51,15 +42,12 @@
 .main .content__card:hover .content__link-back {
   transform: rotateY(360deg);
   transition: all 0.7s ease;
-  background-color: #ffffff;
-  fill: #ffffff;
 }
 .main .content__card:hover .icons {
   transform: rotateY(360deg);
   transition: all 1s ease-out;
 }
-
-.icon__suit {
+.main .icon__suit {
   top: 72px;
   left: 24px;
   position: relative;
@@ -67,15 +55,11 @@
   width: 32px;
   height: 32px;
 }
-.icon__suit--bottom-right {
-  transform: rotate(180deg);
-}
-.icon__suit--bigger {
+.main .icon__suit--bigger {
   width: 64px;
   height: 64px;
 }
-
-.icon__senioruty {
+.main .icon__senioruty {
   top: 16px;
   left: 18px;
   position: absolute;
@@ -83,24 +67,21 @@
   width: 45px;
   height: 45px;
 }
-.icon__senioruty--bottom-right {
+.main .icon__senioruty--bottom-right {
   transform: rotate(180deg);
 }
-
-.icons {
+.main .icons {
   backface-visibility: hidden;
   position: absolute;
   top: 16px;
   transform: rotateY(180deg);
   transition: all 1s ease-out;
 }
-
-.icons--bottom-right {
+.main .icons--bottom-right {
   top: 292px;
   left: 254px;
 }
-
-.icons--center {
+.main .icons--center {
   top: 100px;
   left: 116px;
-}/*# sourceMappingURL=mobile-style.css.map */
+}/*# sourceMappingURL=style.css.map */

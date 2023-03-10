@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/css/normalize.css" rel="stylesheet">
+    <link href="styles/css/style.css" rel="stylesheet">
     <title>Card</title>
-    <link href="styles/css/mobile-style.css" rel="stylesheet">
-    <link href="styles/css/media.css" rel="stylesheet">
 </head>
 
 <body>
     <main class="main">
-        <section class="hero">
             <div class="content">
                 <div class="content__card">
-                    
+
                     <a class="content__link-front" href="#">
                         <img class="content__img-front" src="assets/images/122_2x.png">
                     </a>
@@ -48,13 +47,37 @@
                 </div>
 
                 <div class="content__card">
+
                     <a class="content__link-front" href="#">
                         <img class="content__img-front" src="assets/images/122_2x.png">
                     </a>
 
                     <a class="content__link-back" href="#">
+                        <a class="icons icons--top-left">
+                            <svg class="icon__suit">
+                                <use xlink:href="sprite.svg#Trefle"></use>
+                            </svg>
+                            <svg class="icon__senioruty">
+                                <use xlink:href="sprite.svg#A"></use>
+                            </svg>
+                        </a>
 
+                        <a class="icons icons--center">
+                            <svg class="icon__suit icon__suit--bigger">
+                                <use xlink:href="sprite.svg#Trefle"></use>
+                            </svg>
+                        </a>
+
+                        <a class="icons icons--bottom-right">
+                            <svg class="icon__suit icon__suit--bottom-right">
+                                <use xlink:href="sprite.svg#Trefle"></use>
+                            </svg>
+                            <svg class="icon__senioruty icon__senioruty--bottom-right">
+                                <use xlink:href="sprite.svg#A"></use>
+                            </svg>
+                        </a>
                     </a>
+
                 </div>
 
                 <div class="content__card">
@@ -64,10 +87,33 @@
 
                     <a class="content__link-back" href="#">
 
+                        <a class="icons icons--top-left">
+                            <svg class="icon__suit">
+                                <use xlink:href="sprite.svg#Carreau"></use>
+                            </svg>
+                            <svg class="icon__senioruty">
+                                <use xlink:href="sprite.svg#A"></use>
+                            </svg>
+                        </a>
+
+                        <a class="icons icons--center">
+                            <svg class="icon__suit icon__suit--bigger">
+                                <use xlink:href="sprite.svg#Carreau"></use>
+                            </svg>
+                        </a>
+
+                        <a class="icons icons--bottom-right">
+                            <svg class="icon__suit icon__suit--bottom-right">
+                                <use xlink:href="sprite.svg#Carreau"></use>
+                            </svg>
+                            <svg class="icon__senioruty icon__senioruty--bottom-right">
+                                <use xlink:href="sprite.svg#A"></use>
+                            </svg>
+                        </a>
+
                     </a>
                 </div>
             </div>
-        </section>
     </main>
 </body>
 
