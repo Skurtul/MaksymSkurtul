@@ -41,12 +41,12 @@
 
 		&__card:hover .content__link-front {
 			transform: rotateY(180deg);
-			transition: all 0.2s ease-in;
+			transition: all 0.4s ease-out;
 		}
 
 		&__card:hover .content__link-back {
 			transform: rotateY(360deg);
-			transition: all 0.2s ease-in;
+			transition: all 0.4s ease-out;
 		}
 	}
 
