@@ -1,0 +1,78 @@
+$title-font: "Playfair Display", sans-serif;
+$subtitle-font: "Lato", sans-serif;
+
+// Lato --->
+
+@font-face {
+    font-family: "Lato";
+    src: url("../../assets/fonts/Lato/ttf/Lato-Light.ttf");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "Lato";
+    src: url("../../assets/fonts/Lato/woff2/Lato-Light.woff2");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "Lato";
+    src: url("../../assets/fonts/Lato/ttf/Lato-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Lato";
+    src: url("../../assets/fonts/Lato/woff2/Lato-Regular.woff2");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Lato";
+    src: url("../../assets/fonts/Lato/ttf/Lato-Italic.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Lato";
+    src: url("../../assets/fonts/Lato/woff2/Lato-Italic.woff2");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Lato";
+    src: url("../../assets/fonts/Lato/ttf/Lato-Bold.ttf");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Lato";
+    src: url("../../assets/fonts/Lato/woff2/Lato-Bold.woff2");
+    font-weight: 700;
+  }
+
+  // Playfair Display --->
+
+  @font-face {
+    font-family: "Playfair Display";
+    src: url("../../assets/fonts/PlayfairDisplay/ttf/PlayfairDisplay-Regular.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Playfair Display";
+    src: url("../../assets/fonts/PlayfairDisplay/woff2/PlayfairDisplay-Regular.woff2");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Playfair Display";
+    src: url("../../assets/fonts/PlayfairDisplay/ttf/PlayfairDisplay-Italic.ttf");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Playfair Display";
+    src: url("../../assets/fonts/PlayfairDisplay/woff2/PlayfairDisplay-Italic.woff2");
+    font-weight: 400;
+  }
