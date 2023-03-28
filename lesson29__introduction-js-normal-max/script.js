@@ -1,10 +1,10 @@
 "use sctrict";
 
-let userName = prompt("What is your name?", "");
+const userName = prompt("What is your name?", "");
 alert(`Hello, ${userName}!`);
 
 /* const yearNow = 2023;
-let birthYearUser = prompt("What year were you born?", "");
+const birthYearUser = prompt("What year were you born?", "");
 let ageUser = yearNow - birthYearUser;
 
 if (birthYearUser == null) alert(`Year of birth is not given`);
@@ -27,4 +27,7 @@ alert (`The average speed should be: ${averageSpeed} km/h`); */
 const PLN = 4.36;
 const UAH = 36.96;
 let USD = prompt("Enter value in USD:", "");
-alert(`You'll get: ${USD * EUR} EUR, ${USD * PLN} PLN, ${USD * UAH} UAH.`); */
+const num = Number(USD);
+alert(`You'll get: ${(USD * EUR).toFixed(2)} EUR, ${(USD * PLN).toFixed(2)} PLN, ${(USD * UAH).toFixed(2)} UAH.`); */
+
+
