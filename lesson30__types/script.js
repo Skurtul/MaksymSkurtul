@@ -29,3 +29,4 @@ alert (`Your income will be: ${result.toFixed(2)}`); */
 // 2 && 0 && 3; // 0;
 // 2 || 0 || 3; // 2;
 // 2 && 0 || 3; // 3;
+
