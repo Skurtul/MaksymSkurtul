@@ -1,12 +1,12 @@
 "use strict";
 
-const age = +prompt("Вік?", '');
+/* const age = +prompt("Вік?", '');
 const message = (age <= 11) ? 'Ви дитина':
 (age <= 17) ? 'Ви підліток':
 (age <= 59) ? 'Ви дорослий':
 (age >= 60) ? 'Ви пенсіонер':
 'Ви не ввели вік';
-alert(message);
+alert(message); */
 
 /* const num = +prompt("Введіть число від 0 до 9", '');
 const message = (num == 1) ? '!':
@@ -21,34 +21,33 @@ const message = (num == 1) ? '!':
 'Ви не ввели число';
 alert(message); */
 
-/* const firstNum = +prompt("Введіть початок діапазону", '');
+/* let firstNum = +prompt("Введіть початок діапазону", '');
 const secondNum = +prompt("Введіть кінець діапазону", '');
-const sum = 0;
+let sum = 0;
 
-while (a <= n) {
-	sum += a;
-	a++;
+while (firstNum <= secondNum) {
+	sum += firstNum;
+	firstNum++;
 }
     alert(sum); */
 
-/* const firstNum = +prompt("Введіть перше число", "");
-const secondNum = +prompt("Введіть друге число", "");
+/* let firstNum = +prompt("Введіть перше число", "");
+let secondNum = +prompt("Введіть друге число", "");
 
-while (a != n)
-	if (a > n) {
-		a = a - n;
-	} else if ((n = n - a));
+while (firstNum != secondNum)
+	if (firstNum > secondNum) {
+		firstNum = firstNum - secondNum;
+	} else if ((secondNum = secondNum - firstNum));
 
 alert(firstNum); */
 
-/* const num = +prompt("Введіть будь-яке число", "");
-const gsd = 1;
+/* let num = +prompt("Введіть будь-яке число", "");
 
-for (; n <= num; n++) {
+for (let n = 1; n <= num; n++) {
 	let a = num % n;
 	if (a == 0) {
-		console.log(gsd);
-	} 
+		console.log(n);
+	}
 } */
 
 /* const result = prompt("Введіть ваш вираз", '');

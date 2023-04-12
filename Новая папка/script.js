@@ -1,3 +1,5 @@
+"use strict"
+
 /* let i;
 for (i = 1; i <= 5; i++) {
     console.log(i);
@@ -78,3 +80,42 @@ switch (a) {
 		alert("2,3");
 		break;
 } */
+
+// showMessage();
+
+/* let get = "Сообщение";
+let message = "не получено";
+
+function showMessage() {
+    message = "получено";
+	console.log(`${get} ${message}`);
+}
+
+console.log(`${get} ${message}`);
+
+showMessage();
+showMessage(); */
+
+/* function showName() {
+	console.log("Вася!");
+}
+setTimeout(showName, 1000);
+console.log("Коля!"); */
+
+/* showMessage();
+function showMessage() {
+	console.log("Сообщение");
+} */
+
+/* showMessage();
+let showMessage = function () {
+	console.log("Сообщение");
+}; */
+
+function showMessage() {
+if (2 > 1) {
+        console.log("Сообщение");
+    }
+}
+
+
