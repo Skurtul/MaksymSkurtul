@@ -11,7 +11,7 @@ const car = {
 	year: 2018,
 	averageSpeed: "60",
 	fuelСapacity: "60l",
-	fuelUsage: "6l / 100km",
+	fuelUsage: "6",
 	drivers: driverName,
 };
 
@@ -26,7 +26,10 @@ let speed = car.averageSpeed;
 let timeInWay = distance / speed;
 
 if (timeInWay % 4 === 0) {
-	console.log(timeInWay + Math.floor((timeInWay - 1) / 4));
+	console.log(`${timeInWay + (timeInWay - 1) / 4}г`);
 } else {
-	console.log((timeInWay + Math.floor(timeInWay / 4)).toFixed(2));
+	console.log(`${(timeInWay + Math.floor(timeInWay / 4))} год`);
 }
+
+let petrolWay = (distance / 100 * car.fuelUsage).toFixed(1);
+console.log(`${petrolWay} л`);
