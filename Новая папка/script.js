@@ -118,4 +118,28 @@ if (2 > 1) {
     }
 }
 
+/* const user = {};
+
+user.name = "Іван";
+user.surname = "Smith";
+console.log(user);
+
+user.name = "Петро";
+delete user.surname;
+console.log(user); */
+
+/* let schedule = {};
+const emptySchedule = !Object.keys(schedule).length === 0;
+console.log(emptySchedule); */ // false
+
+// schedule["8:30"] = "Вставай";
+
+// alert( isEmpty(schedule) ); // false
+
+/* let salaries = {
+	John: 100,
+	Ann: 160,
+	Pete: 130,
+}; */
+
 

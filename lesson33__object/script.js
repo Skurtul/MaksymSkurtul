@@ -1,42 +1,32 @@
 "use strict";
 
-/* const user = {};
-
-user.name = "Іван";
-user.surname = "Smith";
-console.log(user);
-
-user.name = "Петро";
-delete user.surname;
-console.log(user); */
-
-/* let schedule = {};
-const emptySchedule = !Object.keys(schedule).length === 0;
-console.log(emptySchedule); */ // false
-
-// schedule["8:30"] = "Вставай";
-
-// alert( isEmpty(schedule) ); // false
-
-/* let salaries = {
-	John: 100,
-	Ann: 160,
-	Pete: 130,
-}; */
-const driverName = prompt("Якого водія додати?", "");
+let driverName = prompt("Якого водія додати?", "");
+const arr = [driverName];
+[driverName].forEach(console.log);
+console.log(driverName.includes("Bob"));
 
 const car = {
 	type: "Fiat",
 	model: "500",
-	year: "2018",
-	averageSpeed: "60 km/h",
+	year: 2018,
+	averageSpeed: "60",
 	fuelСapacity: "60l",
 	fuelUsage: "6l / 100km",
 	drivers: driverName,
 };
 
-for (const [key, value] of Object.entries(car)) {
-	alert(`${key}: ${value}`);
+for (let key in car) {
+	console.log(key + ":" + car[key]);
 }
 
-console.log(car.drivers);
+let distance = prompt(
+	"Cкільки километрів ви хочете подолати?", "");
+let speed = car.averageSpeed;
+
+let timeInWay = distance / speed;
+
+if (timeInWay % 4 === 0) {
+	console.log(timeInWay + Math.floor((timeInWay - 1) / 4));
+} else {
+	console.log((timeInWay + Math.floor(timeInWay / 4)).toFixed(2));
+}
