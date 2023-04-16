@@ -12,7 +12,7 @@ const car = {
 
 car.drivers.push("Glen");
 car.drivers.push("John");
-console.log(car.drivers.includes("Emily")) //false;
+console.log(car.drivers.includes("Emily")); //false;
 
 for (let key in car) {
 	console.log(key + ":" + car[key]);
@@ -21,17 +21,19 @@ for (let key in car) {
 let distance = prompt(
 	"Cкільки километрів ви хочете подолати?", "");
 let speed = car.averageSpeed;
-let timeInWay = distance / speed;
+let uptime = distance / speed;
 
-if (!distance) {
-	console.log(false);
-} else if (timeInWay % 4 === 0) {
-	console.log(`${timeInWay + (timeInWay - 1) / 4} h`);
-} else {
-	console.log(
-		`${timeInWay + Math.floor(timeInWay / 4)} h`
-	);
-}
+function time() {
+	if (!distance) {
+		return false;
+	} else if (uptime % 4 === 0) {
+		return Math.floor(uptime + (uptime - 1) / 4);
+	} else 
+		return uptime + Math.floor(uptime / 4);
+	}
+	
+let timeInWay = time();
+console.log(`${timeInWay}h`);
 
 let petrolWay = ((distance / 100) * car.fuelUsage).toFixed(1);
-console.log(`${petrolWay} l`);
+console.log(`${petrolWay}l`);
