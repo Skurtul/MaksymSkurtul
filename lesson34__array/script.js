@@ -34,8 +34,7 @@ const printShoppingList = (shoppingList) => {
 	sortedShoppingList.sort((a, b) => {
 		if (a.status === true && b.status === false) {
 			return 1;
-		}
-		if (a.status === false && b.status === true) {
+		} else if (a.status === false && b.status === true) {
 			return -1;
 		}
 		return 0;
@@ -44,14 +43,7 @@ const printShoppingList = (shoppingList) => {
 };
 
 const addShopToList = (shop) => {
-	const find = shoppingList.find((value) => {
-		return shop.name === value.name;
-	});
-	if (find) {
-		find.amount += shop.amount;
-	} else {
-		shoppingList.push(shop);
-	}
+	shoppingList.push(shop);
 };
 
 addShopToList({
@@ -69,5 +61,7 @@ addShopToList({
 printShoppingList(shoppingList);
 
 let sum = shoppingList.reduce(
-	(a, b) => a + b.amount * b.price, 0);
+	(a, b) => a + b.amount * b.price,
+	0
+);
 console.log(sum);
