@@ -28,7 +28,7 @@ function time() {
 		return false;
 	} else if (uptime % 4 === 0) {
 		return Math.floor(uptime + (uptime - 1) / 4);
-	} else 
+	} else
 		return uptime + Math.floor(uptime / 4);
 	}
 	

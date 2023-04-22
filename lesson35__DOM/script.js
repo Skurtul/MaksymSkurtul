@@ -50,9 +50,6 @@ var playList = [
 	},
 ];
 
-/* let source = document.getElementById("source");
-let playlist = document.getElementById("playlist"); */
-
 const ul = document.createElement("ul");
 const mainDiv = document.getElementById("content");
 mainDiv.append(ul);
@@ -65,3 +62,46 @@ for (let i in playList) {
 	li.append(p);
 	ul.append(li);
 }
+
+const btn = document.createElement("button");
+const p = document.createElement("p");
+p.textContent = "Open";
+btn.append(p);
+mainDiv.append(btn);
+btn.addEventListener("click", () => {
+	const div = document.createElement("div");
+	const p = document.createElement("p");
+	p.textContent =
+		"Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+	div.append(p);
+	const innerBtn = document.createElement("button");
+	const innerBtnP = document.createElement("p");
+	innerBtnP.textContent = "Close";
+	innerBtn.append(innerBtnP);
+	div.append(innerBtn);
+	mainDiv.append(div);
+	btn.disabled = true;
+	innerBtn.addEventListener("click", () => {
+		div.remove();
+		btn.disabled = false;
+	});
+});
+
+const redLight = document.getElementById("red");
+const yellowLight = document.getElementById("yellow");
+const greenLight = document.getElementById("green");
+const butn = document.getElementById("btn");
+
+let previous = null;
+butn.addEventListener("click", function () {
+	let current = document.querySelector(".active");
+	current.classList.remove("active");
+	if (current === redLight || current === greenLight) {
+		yellowLight.classList.add("active");
+		previous = current;
+	} else {
+		previous === redLight
+			? greenLight.classList.add("active")
+			: redLight.classList.add("active");
+	}
+});
