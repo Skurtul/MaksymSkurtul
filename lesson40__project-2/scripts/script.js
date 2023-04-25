@@ -5,8 +5,12 @@ var swiper = new Swiper(".mySwiper", {
 		clickable: true,
 	},
 	autoplay: {
-		delay: 1000,
+		delay: 5000,
 	},
+	/* autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    }, */
 	loop: true,
 });
 
@@ -19,3 +23,4 @@ var swiper2 = new Swiper(".mySwiper2", {
 	},
 	loop: true,
 });
+

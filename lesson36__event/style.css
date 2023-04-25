@@ -9,3 +9,36 @@
 	height: 300px;
 	resize: none;
 }
+
+#sortable {
+	display: flex;
+	flex-direction: column;
+}
+
+.heading-row {
+	width: 300px;
+	color: #ffebcd;
+	background: #008b8b;
+	cursor: pointer;
+}
+
+.heading-group {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+.table-body {
+	margin: 0 auto;
+}
+
+.table-item {
+	display: flex;
+	justify-content: center;
+	width: 202px;
+}
+
+.table-row {
+	display: flex;
+	gap: 100px;
+}
