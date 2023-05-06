@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <style>
+        .short {
+            width: 200px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+    <div class="blog">
+        <h5 class="paragraph short">
+            ipsum dolor sit amet consectetur adipisicing elit. Labore enim explicabo accusamus
+            eveniet illum possimus nam veniam debitis omnis suscipit ex officiis praesentium harum laborum neque
+            culpa, ipsam porro! Quisquam officiis distinctio excepturi autem quo eligendi adipisci, mollitia
+            quibusdam rem id dolore magnam, eius minima saepe aspernatur possimus laborum facere!
+        </h5>
+
+        <h5 class="paragraph short">
+            ipsum dolor sit amet consectetur adipisicing elit. Labore enim explicabo accusamus
+            eveniet illum possimus nam veniam debitis omnis suscipit ex officiis praesentium harum laborum neque
+            culpa, ipsam porro! Quisquam officiis distinctio excepturi autem quo eligendi adipisci, mollitia
+            quibusdam rem id dolore magnam, eius minima saepe aspernatur possimus laborum facere!
+        </h5>
+        <h5 class="paragraph short">
+            ipsum dolor sit amet consectetur adipisicing elit. Labore enim explicabo accusamus
+            eveniet illum possimus nam veniam debitis omnis suscipit ex officiis praesentium harum laborum neque
+            culpa, ipsam porro! Quisquam officiis distinctio excepturi autem quo eligendi adipisci, mollitia
+            quibusdam rem id dolore magnam, eius minima saepe aspernatur possimus laborum facere!
+        </h5>
+    </div>
+    <script>
+        document.getElementsByClassName('paragraph').addEventListener('click', (e) => {
+            e.target.classList.toggle("short")
+        })
+    </script>
 </body>
+
 </html>

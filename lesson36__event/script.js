@@ -1,4 +1,5 @@
-/* area.hidden = true;
+// Завдання 1
+area.hidden = true;
 
 document.onkeydown = function (e) {
 	if (e.ctrlKey && e.keyCode == "69") {
@@ -18,72 +19,98 @@ document.onkeydown = function (e) {
 		document.getElementById("view").hidden = false;
 		document.getElementById("area").hidden = true;
 	}
-}; */
+};
 
-document.addEventListener('DOMContentLoaded', function() {
-    const table = document.getElementById('sortable');
-    const headers = table.querySelectorAll('th');
-    const tableBody = table.querySelector('tbody');
-    const rows = tableBody.querySelectorAll('tr');
+// Завдання 2
+document.addEventListener("DOMContentLoaded", function () {
+	const table = document.getElementById("sortable");
+	const headers = table.querySelectorAll("th");
+	const tableBody = table.querySelector("tbody");
+	const rows = tableBody.querySelectorAll("tr");
 
-    // Направление сортировки
-    const directions = Array.from(headers).map(function(header) {
-        return '';
-    });
+	const directions = Array.from(headers).map(function (
+		header
+	) {
+		return "";
+	});
 
-    // Преобразовать содержимое данной ячейки в заданном столбце
-    const transform = function(index, content) {
-        // Получить тип данных столбца
-        const type = headers[index].getAttribute('data-type');
-        switch (type) {
-            case 'number':
-                return parseFloat(content);
-            case 'string':
-            default:
-                return content;
-        }
-    };
+	const transform = function (index, content) {
+		// тип данних
+		const type = headers[index].getAttribute("data-type");
+		switch (type) {
+			case "number":
+				return parseFloat(content);
+			case "string":
+			default:
+				return content;
+		}
+	};
 
-    const sortColumn = function(index) {
-        // Получить текущее направление
-        const direction = directions[index] || 'asc';
+	const sortColumn = function (index) {
+		const direction = directions[index] || "asc";
 
-        // Фактор по направлению
-        const multiplier = (direction === 'asc') ? 1 : -1;
+		const multiplier = direction === "asc" ? 1 : -1;
 
-        const newRows = Array.from(rows);
+		const newRows = Array.from(rows);
 
-        newRows.sort(function(rowA, rowB) {
-            const cellA = rowA.querySelectorAll('td')[index].innerHTML;
-            const cellB = rowB.querySelectorAll('td')[index].innerHTML;
+		newRows.sort(function (rowA, rowB) {
+			const cellA =
+				rowA.querySelectorAll("td")[index].innerHTML;
+			const cellB =
+				rowB.querySelectorAll("td")[index].innerHTML;
 
-            const a = transform(index, cellA);
-            const b = transform(index, cellB);    
+			const a = transform(index, cellA);
+			const b = transform(index, cellB);
 
-            switch (true) {
-                case a > b: return 1 * multiplier;
-                case a < b: return -1 * multiplier;
-                case a === b: return 0;
-            }
-        });
+			switch (true) {
+				case a > b:
+					return 1 * multiplier;
+				case a < b:
+					return -1 * multiplier;
+				case a === b:
+					return 0;
+			}
+		});
 
-        // Удалить старые строки
-        [].forEach.call(rows, function(row) {
-            tableBody.removeChild(row);
-        });
+		// Видалити строку
+		[].forEach.call(rows, function (row) {
+			tableBody.removeChild(row);
+		});
 
-        // Поменять направление
-        directions[index] = direction === 'asc' ? 'desc' : 'asc';
+		directions[index] =
+			direction === "asc" ? "desc" : "asc";
 
-        // Добавить новую строку
-        newRows.forEach(function(newRow) {
-            tableBody.appendChild(newRow);
-        });
-    };
+		// Додаємо нову строку
+		newRows.forEach(function (newRow) {
+			tableBody.appendChild(newRow);
+		});
+	};
 
-    [].forEach.call(headers, function(header, index) {
-        header.addEventListener('click', function() {
-            sortColumn(index);
-        });
-    });
+	[].forEach.call(headers, function (header, index) {
+		header.addEventListener("click", function () {
+			sortColumn(index);
+		});
+	});
 });
+
+// Завдання 3
+const resDiv = document.getElementById("content__textarea");
+const resizer = document.querySelector(
+	"div.content__textarea--resizer"
+);
+
+const initResize = (e) => {
+	e.preventDefault;
+	window.addEventListener("mousemove", startResize);
+	window.addEventListener("mouseup", stopResize);
+};
+
+const startResize = (e) => {
+	resDiv.style.width = e.clientX - resDiv.offsetLeft + "px";
+};
+const stopResize = (e) => {
+	window.removeEventListener("mousemove", startResize);
+	window.removeEventListener("mouseup", stopResize);
+};
+
+resizer.addEventListener("mousedown", initResize);

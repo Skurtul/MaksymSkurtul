@@ -112,11 +112,11 @@ let showMessage = function () {
 	console.log("Сообщение");
 }; */
 
-function showMessage() {
-if (2 > 1) {
-        console.log("Сообщение");
-    }
-}
+// function showMessage() {
+// if (2 > 1) {
+//         console.log("Сообщение");
+//     }
+// }
 
 /* const user = {};
 
@@ -141,5 +141,6 @@ console.log(emptySchedule); */ // false
 	Ann: 160,
 	Pete: 130,
 }; */
+
 
 
